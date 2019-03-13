@@ -1,0 +1,47 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "posts": {
+        ".read": true,
+        ".write": "auth != null",
+      "$post_id": {
+        ".validate": "newData.hasChildren(['title', 'body', 'createdAt', 'name', 'comments'])",
+        "title": {
+          ".validate": "newData.isString() && newData.val().length > 0"
+        },
+        "body": {
+          ".validate": "newData.isString() && newData.val().length >= 15"
+        },
+        "createdAt": {
+          ".validate": "newData.isNumber()"
+        },
+        "name": {
+          ".validate": "newData.isString()"
+        },
+        "comments": {
+          ".read": true,
+          ".write": true,
+          "$comment_id": {
+            ".validate": "newData.hasChildren(['name', 'body', 'createdAt'])",
+            "name": {
+              ".validate": "newData.isString() && newData.val().length > 0"
+            },
+            "body": {
+              ".validate": "newData.isString() && newData.val().length > 0"
+            },
+            "createdAt": {
+              ".validate": "newData.isNumber()"
+            },
+            "$other": {
+              ".validate": false
+            }
+          }
+        },
+      	"$other": {
+          ".validate": false
+        }
+      }
+    }
+  }
+}

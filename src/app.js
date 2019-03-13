@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import AppRouter, { history } from './routers/AppRouter';
+import history from './routers/history';
+import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { login, logout } from './actions/auth';
+import { logout, setCurrentUser } from './actions/auth';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
-import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from './firebase/firebase';
-import LoadingPage from './components/LoadingPage';
+import Spinner from './components/common/Spinner';
 
 const store = configureStore();
 
@@ -27,26 +27,36 @@ const renderApp = () => {
     }
 };
 
-ReactDOM.render( <LoadingPage />, document.getElementById( 'app' ) );
-
-//renderApp();
+ReactDOM.render(
+    <Spinner 
+        classNameWrapper="loader"
+        style={ { width: '160px', margin: '0' } }
+    />,
+    document.getElementById( 'app' )
+);
 
 firebase.auth().onAuthStateChanged( ( user ) => {
     if ( user ) {
-        store.dispatch( login( user.uid ) );
+        const userData = {
+            uid: user.uid,
+            name: user.displayName,
+            email: user.email
+        };
+
+        store.dispatch( setCurrentUser( userData ) );
+
         renderApp();
 
-        console.log('i am logged in');
-        
-
-        /*if ( history.location.pathname === '/' ) {
-            history.push( '/dashboard' );
-        }*/
+        if ( history.location.pathname === '/login' ) {
+            history.push( '/' );
+        }
     } else {
         store.dispatch( logout() );
+
         renderApp();
-        console.log('loggin ooout');
         
-        history.push( '/' );
+        if ( ! history.location.pathname === '/login' ) {
+            history.push( '/' );
+        } 
     }
 });

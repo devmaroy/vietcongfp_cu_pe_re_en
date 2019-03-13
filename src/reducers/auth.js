@@ -1,10 +1,41 @@
-export default ( state = {}, action ) => {
+// Auth Reducer
+
+import { 
+    SET_CURRENT_USER, 
+    SET_AUTH_LOADING, 
+    CLEAR_AUTH_LOADING,
+    LOGOUT 
+} from '../actions/types';
+
+const authReducerDefaultState = {
+    isLoading: false,
+    isAuthenticated: false,
+    user: {}
+};
+
+export default ( state = authReducerDefaultState, action ) => {
     switch ( action.type ) {
-        case 'LOGIN':
+        case SET_CURRENT_USER:
             return {
-                uid: action.uid
-            };
-        case 'LOGOUT':
+                ...state,
+                isLoading: false,
+                isAuthenticated: !!action.user.uid,
+                user: action.user
+            }
+
+        case SET_AUTH_LOADING:
+            return {
+                ...state,
+                isLoading: true
+            }
+
+        case CLEAR_AUTH_LOADING:
+            return {
+                ...state,
+                isLoading: false
+            }
+
+        case LOGOUT:
             return {};
         default:
             return state;
