@@ -21,9 +21,9 @@ password: 123456
 
 
 
-![](screenshot.png)
-![](screenshot2.png)
-![](screenshot3.png)
+![](screenshot-min.png)
+![](screenshot2-min.png)
+![](screenshot3-min.png)
 
 Requirements
 ============
