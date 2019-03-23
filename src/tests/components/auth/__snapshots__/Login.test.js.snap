@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render form inside Login 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <div>
+      <h2>
+        Sign In
+      </h2>
+      <form
+        className="form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="email"
+              onChange={[Function]}
+              placeholder="Your email"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="password"
+              onChange={[Function]}
+              placeholder="Your password"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="form-meta"
+        >
+          <p>
+            Don't have an account? 
+            <Link
+              replace={false}
+              to="/register"
+            >
+              Sign Up
+            </Link>
+          </p>
+          <button
+            className="button"
+          >
+            Sign In
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render correctly Login with spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <Spinner
+      alt="Loading..."
+      imagePath="/images/loader.gif"
+      style={
+        Object {
+          "display": "block",
+          "margin": "60px",
+          "width": "80px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`should render correctly Login without spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <div>
+      <h2>
+        Sign In
+      </h2>
+      <form
+        className="form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="email"
+              onChange={[Function]}
+              placeholder="Your email"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="password"
+              onChange={[Function]}
+              placeholder="Your password"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="form-meta"
+        >
+          <p>
+            Don't have an account? 
+            <Link
+              replace={false}
+              to="/register"
+            >
+              Sign Up
+            </Link>
+          </p>
+          <button
+            className="button"
+          >
+            Sign In
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

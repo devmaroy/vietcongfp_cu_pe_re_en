@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AddPostPage correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <h2>
+      Create Post
+    </h2>
+    <Connect(PostForm)
+      onSubmit={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`should render PostForm correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <h2>
+      Create Post
+    </h2>
+    <Connect(PostForm)
+      onSubmit={[Function]}
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not show remove button if not authenticated 1`] = `
+<tr
+  className="clan"
+>
+  <td>
+    <FlagIcon
+      code="CZ"
+      size={26}
+      title="Country flag CZ"
+    />
+  </td>
+  <td>
+    doG
+  </td>
+  <td>
+    Dog Soldiers
+  </td>
+  <td>
+    Lue09
+  </td>
+  <td>
+    <a
+      href="https://dogsoldiers.cz/"
+    >
+      https://dogsoldiers.cz/
+    </a>
+  </td>
+  <td>
+    <a
+      href="https://esl.com/team/110"
+    >
+      Dog Soldiers
+    </a>
+  </td>
+</tr>
+`;
+
+exports[`should render ClanItem correctly 1`] = `
+<tr
+  className="clan"
+>
+  <td>
+    <FlagIcon
+      code="CZ"
+      size={26}
+      title="Country flag CZ"
+    />
+  </td>
+  <td>
+    doG
+  </td>
+  <td>
+    Dog Soldiers
+  </td>
+  <td>
+    Lue09
+  </td>
+  <td>
+    <a
+      href="https://dogsoldiers.cz/"
+    >
+      https://dogsoldiers.cz/
+    </a>
+  </td>
+  <td>
+    <a
+      href="https://esl.com/team/110"
+    >
+      Dog Soldiers
+    </a>
+  </td>
+</tr>
+`;
+
+exports[`should show remove button if authenticated 1`] = `
+<tr
+  className="clan"
+>
+  <td>
+    <FlagIcon
+      code="CZ"
+      size={26}
+      title="Country flag CZ"
+    />
+  </td>
+  <td>
+    doG
+  </td>
+  <td>
+    Dog Soldiers
+  </td>
+  <td>
+    Lue09
+  </td>
+  <td>
+    <a
+      href="https://dogsoldiers.cz/"
+    >
+      https://dogsoldiers.cz/
+    </a>
+  </td>
+  <td>
+    <a
+      href="https://esl.com/team/110"
+    >
+      Dog Soldiers
+    </a>
+  </td>
+  <td>
+    <Link
+      replace={false}
+      to="/clans/1/edit"
+    >
+      <img
+        alt="Edit icon"
+        className="icon edit-icon"
+        src="/images/icons/edit.svg"
+      />
+    </Link>
+    <button
+      onClick={[Function]}
+    >
+      <img
+        alt="Remove icon"
+        className="icon remove-icon"
+        src="/images/icons/remove.svg"
+      />
+    </button>
+  </td>
+</tr>
+`;

@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not show Pagination if length of comments is less than commentsPerPage in state 1`] = `
+<div>
+  <h3>
+    Comments: 
+    5
+  </h3>
+  <div>
+    <div
+      className="comments"
+    >
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "Oh. Awesome!!!",
+            "createdAt": 1000,
+            "id": "1",
+            "name": "Andy",
+            "postId": "1",
+          }
+        }
+        key="1"
+      />
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "Great! New patch is here!",
+            "createdAt": 1200,
+            "id": "2",
+            "name": "Pete0009",
+            "postId": "1",
+          }
+        }
+        key="2"
+      />
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "Nice pictures :))",
+            "createdAt": 1500,
+            "id": "3",
+            "name": "Grer04",
+            "postId": "2",
+          }
+        }
+        key="3"
+      />
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "I want to join your team!!! Please!",
+            "createdAt": 2000,
+            "id": "4",
+            "name": "Iwane01",
+            "postId": "3",
+          }
+        }
+        key="4"
+      />
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "Yeah.. of course.. we need more team members. MEH",
+            "createdAt": 2200,
+            "id": "5",
+            "name": "Susi",
+            "postId": "3",
+          }
+        }
+        key="5"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render CommentList correctly with data 1`] = `
+<div>
+  <h3>
+    Comments: 
+    5
+  </h3>
+  <div>
+    <div
+      className="comments"
+    >
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "Oh. Awesome!!!",
+            "createdAt": 1000,
+            "id": "1",
+            "name": "Andy",
+            "postId": "1",
+          }
+        }
+        key="1"
+      />
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "Great! New patch is here!",
+            "createdAt": 1200,
+            "id": "2",
+            "name": "Pete0009",
+            "postId": "1",
+          }
+        }
+        key="2"
+      />
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "Nice pictures :))",
+            "createdAt": 1500,
+            "id": "3",
+            "name": "Grer04",
+            "postId": "2",
+          }
+        }
+        key="3"
+      />
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "I want to join your team!!! Please!",
+            "createdAt": 2000,
+            "id": "4",
+            "name": "Iwane01",
+            "postId": "3",
+          }
+        }
+        key="4"
+      />
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "Yeah.. of course.. we need more team members. MEH",
+            "createdAt": 2200,
+            "id": "5",
+            "name": "Susi",
+            "postId": "3",
+          }
+        }
+        key="5"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render CommentList with empty message 1`] = `
+<div>
+  <h3>
+    Comments: 
+    0
+  </h3>
+  <p>
+    There are no comments.
+  </p>
+</div>
+`;
+
+exports[`should show Pagination if length of comments is more than commentsPerPage in state 1`] = `
+<div>
+  <h3>
+    Comments: 
+    5
+  </h3>
+  <div>
+    <div
+      className="comments"
+    >
+      <Connect(CommentItem)
+        comment={
+          Object {
+            "body": "Oh. Awesome!!!",
+            "createdAt": 1000,
+            "id": "1",
+            "name": "Andy",
+            "postId": "1",
+          }
+        }
+        key="1"
+      />
+    </div>
+    <div
+      className="site-pagination"
+    >
+      <a
+        activePage={1}
+        firstPageText="«"
+        getPageUrl={[Function]}
+        hideFirstLastPages={false}
+        innerClass="pagination"
+        itemsCountPerPage={1}
+        lastPageText="»"
+        nextPageText="⟩"
+        onChange={[Function]}
+        pageRangeDisplayed={5}
+        prevPageText="⟨"
+        totalItemsCount={5}
+      />
+    </div>
+  </div>
+</div>
+`;

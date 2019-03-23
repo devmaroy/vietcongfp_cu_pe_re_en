@@ -9,15 +9,30 @@
 @import './base/settings';
 @import './base/base';
 
+
 // Components
-@import './components/box-layout';
+
+// General
 @import './components/button';
-@import './components/header';
 @import './components/content-container';
-@import './components/page-header';
+@import './components/form';
 @import './components/input-group';
 @import './components/inputs';
-@import './components/form';
-@import './components/visibility';
-@import './components/list';
+@import './components/pagination';
 @import './components/loader';
+@import './components/page';
+
+// Layout
+@import './components/layout/header';
+@import './components/layout/navigation';
+@import './components/layout/hero';
+@import './components/layout/footer';
+
+// Post
+@import './components/post/post';
+
+// Comment
+@import './components/comment/comment';
+
+// Clan
+@import './components/clan/clan';

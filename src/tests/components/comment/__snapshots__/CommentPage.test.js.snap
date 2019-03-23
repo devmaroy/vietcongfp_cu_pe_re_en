@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not render CommentPage with spinner 1`] = `
+<div>
+  <Connect(AddCommentPage) />
+  <CommentList
+    comments={Array []}
+  />
+</div>
+`;
+
+exports[`should render correctly AddCommentPage 1`] = `
+<div>
+  <Connect(AddCommentPage) />
+  <CommentList
+    comments={Array []}
+  />
+</div>
+`;
+
+exports[`should render correctly CommentList 1`] = `
+<div>
+  <Connect(AddCommentPage) />
+  <CommentList
+    comments={Array []}
+  />
+</div>
+`;
+
+exports[`should render correctly CommentPage with spinner 1`] = `
+<div>
+  <Connect(AddCommentPage) />
+  <Spinner
+    alt="Loading..."
+    imagePath="/images/loader.gif"
+    style={
+      Object {
+        "display": "block",
+        "margin": "60px",
+        "width": "80px",
+      }
+    }
+  />
+</div>
+`;

@@ -1,16 +1,58 @@
+/*------------------------------------*\
+    # Inputs
+\*------------------------------------*/
+
+
+/* Text Input */
+
 .text-input {
-    border: 1px solid #cacccd;
-    height: 50px;
+    //-webkit-appearance: none;
+    border: .1rem solid $off-green;
+    border-radius: 0;
+    background: white;
+    height: 5rem;
+    width: 45rem;
+    outline: none;
     font-size: $font-size-large;
     font-weight: 300;
     padding: $s-size;
+    line-height: 1.6;
+    color: $grey;
+    
+    &:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px lighten( $light-green, 35% ) inset;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background: lighten( $light-green, 35%);
+    }
 }
+
+
+/* Select */
 
 .select {
     @extend .text-input;
+    // Remove ugly default border radius of select
+    // Can use -webkit-appearance: none; but we will lose arrows
+    border: 0;
+
+    // Fake border like normal input has
+    outline: 1px solid $off-green; 
 }
+
+
+/* Textarea */ 
 
 .textarea {
     @extend .text-input;
-    height: 10rem;
+    height: 15rem;
+}
+
+.textarea--desktop {
+    @media ( min-width: $desktop-breakpoint ) {
+        width: 100%;
+        height: 35rem;
+    }
 }

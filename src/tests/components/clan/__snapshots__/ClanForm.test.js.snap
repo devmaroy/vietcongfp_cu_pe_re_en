@@ -1,0 +1,1105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render form inside ClanForm 1`] = `
+<form
+  className="form"
+  noValidate={true}
+  onSubmit={[Function]}
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__item"
+    >
+      <TextFieldGroup
+        className="text-input"
+        name="tag"
+        onChange={[Function]}
+        placeholder="Tag"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__item"
+    >
+      <TextFieldGroup
+        className="text-input"
+        name="name"
+        onChange={[Function]}
+        placeholder="Name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__item"
+    >
+      <SelectFieldGroup
+        className="select"
+        name="country"
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "key": "AF",
+              "text": "Afghanistan",
+            },
+            Object {
+              "key": "AX",
+              "text": "Åland Islands",
+            },
+            Object {
+              "key": "AL",
+              "text": "Albania",
+            },
+            Object {
+              "key": "DZ",
+              "text": "Algeria",
+            },
+            Object {
+              "key": "AS",
+              "text": "American Samoa",
+            },
+            Object {
+              "key": "AD",
+              "text": "Andorra",
+            },
+            Object {
+              "key": "AO",
+              "text": "Angola",
+            },
+            Object {
+              "key": "AI",
+              "text": "Anguilla",
+            },
+            Object {
+              "key": "AQ",
+              "text": "Antarctica",
+            },
+            Object {
+              "key": "AG",
+              "text": "Antigua and Barbuda",
+            },
+            Object {
+              "key": "AR",
+              "text": "Argentina",
+            },
+            Object {
+              "key": "AM",
+              "text": "Armenia",
+            },
+            Object {
+              "key": "AW",
+              "text": "Aruba",
+            },
+            Object {
+              "key": "AU",
+              "text": "Australia",
+            },
+            Object {
+              "key": "AT",
+              "text": "Austria",
+            },
+            Object {
+              "key": "AZ",
+              "text": "Azerbaijan",
+            },
+            Object {
+              "key": "BS",
+              "text": "Bahamas",
+            },
+            Object {
+              "key": "BH",
+              "text": "Bahrain",
+            },
+            Object {
+              "key": "BD",
+              "text": "Bangladesh",
+            },
+            Object {
+              "key": "BB",
+              "text": "Barbados",
+            },
+            Object {
+              "key": "BY",
+              "text": "Belarus",
+            },
+            Object {
+              "key": "BE",
+              "text": "Belgium",
+            },
+            Object {
+              "key": "BZ",
+              "text": "Belize",
+            },
+            Object {
+              "key": "BJ",
+              "text": "Benin",
+            },
+            Object {
+              "key": "BM",
+              "text": "Bermuda",
+            },
+            Object {
+              "key": "BT",
+              "text": "Bhutan",
+            },
+            Object {
+              "key": "BO",
+              "text": "Bolivia",
+            },
+            Object {
+              "key": "BA",
+              "text": "Bosnia and Herzegovina",
+            },
+            Object {
+              "key": "BW",
+              "text": "Botswana",
+            },
+            Object {
+              "key": "BV",
+              "text": "Bouvet Island",
+            },
+            Object {
+              "key": "BR",
+              "text": "Brazil",
+            },
+            Object {
+              "key": "IO",
+              "text": "British Indian Ocean Territory",
+            },
+            Object {
+              "key": "BN",
+              "text": "Brunei Darussalam",
+            },
+            Object {
+              "key": "BG",
+              "text": "Bulgaria",
+            },
+            Object {
+              "key": "BF",
+              "text": "Burkina Faso",
+            },
+            Object {
+              "key": "BI",
+              "text": "Burundi",
+            },
+            Object {
+              "key": "KH",
+              "text": "Cambodia",
+            },
+            Object {
+              "key": "CM",
+              "text": "Cameroon",
+            },
+            Object {
+              "key": "CA",
+              "text": "Canada",
+            },
+            Object {
+              "key": "CV",
+              "text": "Cape Verde",
+            },
+            Object {
+              "key": "KY",
+              "text": "Cayman Islands",
+            },
+            Object {
+              "key": "CF",
+              "text": "Central African Republic",
+            },
+            Object {
+              "key": "TD",
+              "text": "Chad",
+            },
+            Object {
+              "key": "CL",
+              "text": "Chile",
+            },
+            Object {
+              "key": "CN",
+              "text": "China",
+            },
+            Object {
+              "key": "CX",
+              "text": "Christmas Island",
+            },
+            Object {
+              "key": "CC",
+              "text": "Cocos (Keeling) Islands",
+            },
+            Object {
+              "key": "CO",
+              "text": "Colombia",
+            },
+            Object {
+              "key": "KM",
+              "text": "Comoros",
+            },
+            Object {
+              "key": "CG",
+              "text": "Congo",
+            },
+            Object {
+              "key": "CD",
+              "text": "Congo, The Democratic Republic of the",
+            },
+            Object {
+              "key": "CK",
+              "text": "Cook Islands",
+            },
+            Object {
+              "key": "CR",
+              "text": "Costa Rica",
+            },
+            Object {
+              "key": "CI",
+              "text": "Cote D'Ivoire",
+            },
+            Object {
+              "key": "HR",
+              "text": "Croatia",
+            },
+            Object {
+              "key": "CU",
+              "text": "Cuba",
+            },
+            Object {
+              "key": "CY",
+              "text": "Cyprus",
+            },
+            Object {
+              "key": "CZ",
+              "text": "Czech Republic",
+            },
+            Object {
+              "key": "DK",
+              "text": "Denmark",
+            },
+            Object {
+              "key": "DJ",
+              "text": "Djibouti",
+            },
+            Object {
+              "key": "DM",
+              "text": "Dominica",
+            },
+            Object {
+              "key": "DO",
+              "text": "Dominican Republic",
+            },
+            Object {
+              "key": "EC",
+              "text": "Ecuador",
+            },
+            Object {
+              "key": "EG",
+              "text": "Egypt",
+            },
+            Object {
+              "key": "SV",
+              "text": "El Salvador",
+            },
+            Object {
+              "key": "GQ",
+              "text": "Equatorial Guinea",
+            },
+            Object {
+              "key": "ER",
+              "text": "Eritrea",
+            },
+            Object {
+              "key": "EE",
+              "text": "Estonia",
+            },
+            Object {
+              "key": "ET",
+              "text": "Ethiopia",
+            },
+            Object {
+              "key": "FK",
+              "text": "Falkland Islands (Malvinas)",
+            },
+            Object {
+              "key": "FO",
+              "text": "Faroe Islands",
+            },
+            Object {
+              "key": "FJ",
+              "text": "Fiji",
+            },
+            Object {
+              "key": "FI",
+              "text": "Finland",
+            },
+            Object {
+              "key": "FR",
+              "text": "France",
+            },
+            Object {
+              "key": "GF",
+              "text": "French Guiana",
+            },
+            Object {
+              "key": "PF",
+              "text": "French Polynesia",
+            },
+            Object {
+              "key": "TF",
+              "text": "French Southern Territories",
+            },
+            Object {
+              "key": "GA",
+              "text": "Gabon",
+            },
+            Object {
+              "key": "GM",
+              "text": "Gambia",
+            },
+            Object {
+              "key": "GE",
+              "text": "Georgia",
+            },
+            Object {
+              "key": "DE",
+              "text": "Germany",
+            },
+            Object {
+              "key": "GH",
+              "text": "Ghana",
+            },
+            Object {
+              "key": "GI",
+              "text": "Gibraltar",
+            },
+            Object {
+              "key": "GR",
+              "text": "Greece",
+            },
+            Object {
+              "key": "GL",
+              "text": "Greenland",
+            },
+            Object {
+              "key": "GD",
+              "text": "Grenada",
+            },
+            Object {
+              "key": "GP",
+              "text": "Guadeloupe",
+            },
+            Object {
+              "key": "GU",
+              "text": "Guam",
+            },
+            Object {
+              "key": "GT",
+              "text": "Guatemala",
+            },
+            Object {
+              "key": "GG",
+              "text": "Guernsey",
+            },
+            Object {
+              "key": "GN",
+              "text": "Guinea",
+            },
+            Object {
+              "key": "GW",
+              "text": "Guinea-Bissau",
+            },
+            Object {
+              "key": "GY",
+              "text": "Guyana",
+            },
+            Object {
+              "key": "HT",
+              "text": "Haiti",
+            },
+            Object {
+              "key": "HM",
+              "text": "Heard Island and Mcdonald Islands",
+            },
+            Object {
+              "key": "VA",
+              "text": "Holy See (Vatican City State)",
+            },
+            Object {
+              "key": "HN",
+              "text": "Honduras",
+            },
+            Object {
+              "key": "HK",
+              "text": "Hong Kong",
+            },
+            Object {
+              "key": "HU",
+              "text": "Hungary",
+            },
+            Object {
+              "key": "IS",
+              "text": "Iceland",
+            },
+            Object {
+              "key": "IN",
+              "text": "India",
+            },
+            Object {
+              "key": "ID",
+              "text": "Indonesia",
+            },
+            Object {
+              "key": "IR",
+              "text": "Iran, Islamic Republic Of",
+            },
+            Object {
+              "key": "IQ",
+              "text": "Iraq",
+            },
+            Object {
+              "key": "IE",
+              "text": "Ireland",
+            },
+            Object {
+              "key": "IM",
+              "text": "Isle of Man",
+            },
+            Object {
+              "key": "IL",
+              "text": "Israel",
+            },
+            Object {
+              "key": "IT",
+              "text": "Italy",
+            },
+            Object {
+              "key": "JM",
+              "text": "Jamaica",
+            },
+            Object {
+              "key": "JP",
+              "text": "Japan",
+            },
+            Object {
+              "key": "JE",
+              "text": "Jersey",
+            },
+            Object {
+              "key": "JO",
+              "text": "Jordan",
+            },
+            Object {
+              "key": "KZ",
+              "text": "Kazakhstan",
+            },
+            Object {
+              "key": "KE",
+              "text": "Kenya",
+            },
+            Object {
+              "key": "KI",
+              "text": "Kiribati",
+            },
+            Object {
+              "key": "KP",
+              "text": "Korea, Democratic People'S Republic of",
+            },
+            Object {
+              "key": "KR",
+              "text": "Korea, Republic of",
+            },
+            Object {
+              "key": "KW",
+              "text": "Kuwait",
+            },
+            Object {
+              "key": "KG",
+              "text": "Kyrgyzstan",
+            },
+            Object {
+              "key": "LA",
+              "text": "Lao People'S Democratic Republic",
+            },
+            Object {
+              "key": "LV",
+              "text": "Latvia",
+            },
+            Object {
+              "key": "LB",
+              "text": "Lebanon",
+            },
+            Object {
+              "key": "LS",
+              "text": "Lesotho",
+            },
+            Object {
+              "key": "LR",
+              "text": "Liberia",
+            },
+            Object {
+              "key": "LY",
+              "text": "Libyan Arab Jamahiriya",
+            },
+            Object {
+              "key": "LI",
+              "text": "Liechtenstein",
+            },
+            Object {
+              "key": "LT",
+              "text": "Lithuania",
+            },
+            Object {
+              "key": "LU",
+              "text": "Luxembourg",
+            },
+            Object {
+              "key": "MO",
+              "text": "Macao",
+            },
+            Object {
+              "key": "MK",
+              "text": "Macedonia, The Former Yugoslav Republic of",
+            },
+            Object {
+              "key": "MG",
+              "text": "Madagascar",
+            },
+            Object {
+              "key": "MW",
+              "text": "Malawi",
+            },
+            Object {
+              "key": "MY",
+              "text": "Malaysia",
+            },
+            Object {
+              "key": "MV",
+              "text": "Maldives",
+            },
+            Object {
+              "key": "ML",
+              "text": "Mali",
+            },
+            Object {
+              "key": "MT",
+              "text": "Malta",
+            },
+            Object {
+              "key": "MH",
+              "text": "Marshall Islands",
+            },
+            Object {
+              "key": "MQ",
+              "text": "Martinique",
+            },
+            Object {
+              "key": "MR",
+              "text": "Mauritania",
+            },
+            Object {
+              "key": "MU",
+              "text": "Mauritius",
+            },
+            Object {
+              "key": "YT",
+              "text": "Mayotte",
+            },
+            Object {
+              "key": "MX",
+              "text": "Mexico",
+            },
+            Object {
+              "key": "FM",
+              "text": "Micronesia, Federated States of",
+            },
+            Object {
+              "key": "MD",
+              "text": "Moldova, Republic of",
+            },
+            Object {
+              "key": "MC",
+              "text": "Monaco",
+            },
+            Object {
+              "key": "MN",
+              "text": "Mongolia",
+            },
+            Object {
+              "key": "MS",
+              "text": "Montserrat",
+            },
+            Object {
+              "key": "MA",
+              "text": "Morocco",
+            },
+            Object {
+              "key": "MZ",
+              "text": "Mozambique",
+            },
+            Object {
+              "key": "MM",
+              "text": "Myanmar",
+            },
+            Object {
+              "key": "NA",
+              "text": "Namibia",
+            },
+            Object {
+              "key": "NR",
+              "text": "Nauru",
+            },
+            Object {
+              "key": "NP",
+              "text": "Nepal",
+            },
+            Object {
+              "key": "NL",
+              "text": "Netherlands",
+            },
+            Object {
+              "key": "AN",
+              "text": "Netherlands Antilles",
+            },
+            Object {
+              "key": "NC",
+              "text": "New Caledonia",
+            },
+            Object {
+              "key": "NZ",
+              "text": "New Zealand",
+            },
+            Object {
+              "key": "NI",
+              "text": "Nicaragua",
+            },
+            Object {
+              "key": "NE",
+              "text": "Niger",
+            },
+            Object {
+              "key": "NG",
+              "text": "Nigeria",
+            },
+            Object {
+              "key": "NU",
+              "text": "Niue",
+            },
+            Object {
+              "key": "NF",
+              "text": "Norfolk Island",
+            },
+            Object {
+              "key": "MP",
+              "text": "Northern Mariana Islands",
+            },
+            Object {
+              "key": "NO",
+              "text": "Norway",
+            },
+            Object {
+              "key": "OM",
+              "text": "Oman",
+            },
+            Object {
+              "key": "PK",
+              "text": "Pakistan",
+            },
+            Object {
+              "key": "PW",
+              "text": "Palau",
+            },
+            Object {
+              "key": "PS",
+              "text": "Palestinian Territory, Occupied",
+            },
+            Object {
+              "key": "PA",
+              "text": "Panama",
+            },
+            Object {
+              "key": "PG",
+              "text": "Papua New Guinea",
+            },
+            Object {
+              "key": "PY",
+              "text": "Paraguay",
+            },
+            Object {
+              "key": "PE",
+              "text": "Peru",
+            },
+            Object {
+              "key": "PH",
+              "text": "Philippines",
+            },
+            Object {
+              "key": "PN",
+              "text": "Pitcairn",
+            },
+            Object {
+              "key": "PL",
+              "text": "Poland",
+            },
+            Object {
+              "key": "PT",
+              "text": "Portugal",
+            },
+            Object {
+              "key": "PR",
+              "text": "Puerto Rico",
+            },
+            Object {
+              "key": "QA",
+              "text": "Qatar",
+            },
+            Object {
+              "key": "RE",
+              "text": "Reunion",
+            },
+            Object {
+              "key": "RO",
+              "text": "Romania",
+            },
+            Object {
+              "key": "RU",
+              "text": "Russian Federation",
+            },
+            Object {
+              "key": "RW",
+              "text": "RWANDA",
+            },
+            Object {
+              "key": "SH",
+              "text": "Saint Helena",
+            },
+            Object {
+              "key": "KN",
+              "text": "Saint Kitts and Nevis",
+            },
+            Object {
+              "key": "LC",
+              "text": "Saint Lucia",
+            },
+            Object {
+              "key": "PM",
+              "text": "Saint Pierre and Miquelon",
+            },
+            Object {
+              "key": "VC",
+              "text": "Saint Vincent and the Grenadines",
+            },
+            Object {
+              "key": "WS",
+              "text": "Samoa",
+            },
+            Object {
+              "key": "SM",
+              "text": "San Marino",
+            },
+            Object {
+              "key": "ST",
+              "text": "Sao Tome and Principe",
+            },
+            Object {
+              "key": "SA",
+              "text": "Saudi Arabia",
+            },
+            Object {
+              "key": "SN",
+              "text": "Senegal",
+            },
+            Object {
+              "key": "CS",
+              "text": "Serbia and Montenegro",
+            },
+            Object {
+              "key": "SC",
+              "text": "Seychelles",
+            },
+            Object {
+              "key": "SL",
+              "text": "Sierra Leone",
+            },
+            Object {
+              "key": "SG",
+              "text": "Singapore",
+            },
+            Object {
+              "key": "SK",
+              "text": "Slovakia",
+            },
+            Object {
+              "key": "SI",
+              "text": "Slovenia",
+            },
+            Object {
+              "key": "SB",
+              "text": "Solomon Islands",
+            },
+            Object {
+              "key": "SO",
+              "text": "Somalia",
+            },
+            Object {
+              "key": "ZA",
+              "text": "South Africa",
+            },
+            Object {
+              "key": "GS",
+              "text": "South Georgia and the South Sandwich Islands",
+            },
+            Object {
+              "key": "ES",
+              "text": "Spain",
+            },
+            Object {
+              "key": "LK",
+              "text": "Sri Lanka",
+            },
+            Object {
+              "key": "SD",
+              "text": "Sudan",
+            },
+            Object {
+              "key": "SR",
+              "text": "Suritext",
+            },
+            Object {
+              "key": "SJ",
+              "text": "Svalbard and Jan Mayen",
+            },
+            Object {
+              "key": "SZ",
+              "text": "Swaziland",
+            },
+            Object {
+              "key": "SE",
+              "text": "Sweden",
+            },
+            Object {
+              "key": "CH",
+              "text": "Switzerland",
+            },
+            Object {
+              "key": "SY",
+              "text": "Syrian Arab Republic",
+            },
+            Object {
+              "key": "TW",
+              "text": "Taiwan, Province of China",
+            },
+            Object {
+              "key": "TJ",
+              "text": "Tajikistan",
+            },
+            Object {
+              "key": "TZ",
+              "text": "Tanzania, United Republic of",
+            },
+            Object {
+              "key": "TH",
+              "text": "Thailand",
+            },
+            Object {
+              "key": "TL",
+              "text": "Timor-Leste",
+            },
+            Object {
+              "key": "TG",
+              "text": "Togo",
+            },
+            Object {
+              "key": "TK",
+              "text": "Tokelau",
+            },
+            Object {
+              "key": "TO",
+              "text": "Tonga",
+            },
+            Object {
+              "key": "TT",
+              "text": "Trinidad and Tobago",
+            },
+            Object {
+              "key": "TN",
+              "text": "Tunisia",
+            },
+            Object {
+              "key": "TR",
+              "text": "Turkey",
+            },
+            Object {
+              "key": "TM",
+              "text": "Turkmenistan",
+            },
+            Object {
+              "key": "TC",
+              "text": "Turks and Caicos Islands",
+            },
+            Object {
+              "key": "TV",
+              "text": "Tuvalu",
+            },
+            Object {
+              "key": "UG",
+              "text": "Uganda",
+            },
+            Object {
+              "key": "UA",
+              "text": "Ukraine",
+            },
+            Object {
+              "key": "AE",
+              "text": "United Arab Emirates",
+            },
+            Object {
+              "key": "GB",
+              "text": "United Kingdom",
+            },
+            Object {
+              "key": "US",
+              "text": "United States",
+            },
+            Object {
+              "key": "UM",
+              "text": "United States Minor Outlying Islands",
+            },
+            Object {
+              "key": "UY",
+              "text": "Uruguay",
+            },
+            Object {
+              "key": "UZ",
+              "text": "Uzbekistan",
+            },
+            Object {
+              "key": "VU",
+              "text": "Vanuatu",
+            },
+            Object {
+              "key": "VE",
+              "text": "Venezuela",
+            },
+            Object {
+              "key": "VN",
+              "text": "Viet Nam",
+            },
+            Object {
+              "key": "VG",
+              "text": "Virgin Islands, British",
+            },
+            Object {
+              "key": "VI",
+              "text": "Virgin Islands, U.S.",
+            },
+            Object {
+              "key": "WF",
+              "text": "Wallis and Futuna",
+            },
+            Object {
+              "key": "EH",
+              "text": "Western Sahara",
+            },
+            Object {
+              "key": "YE",
+              "text": "Yemen",
+            },
+            Object {
+              "key": "ZM",
+              "text": "Zambia",
+            },
+            Object {
+              "key": "ZW",
+              "text": "Zimbabwe",
+            },
+          ]
+        }
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__item"
+    >
+      <TextFieldGroup
+        className="text-input"
+        name="leader"
+        onChange={[Function]}
+        placeholder="Leader"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__item"
+    >
+      <TextFieldGroup
+        className="text-input"
+        name="url"
+        onChange={[Function]}
+        placeholder="Website"
+        type="url"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__item"
+    >
+      <TextFieldGroup
+        className="text-input"
+        name="eslName"
+        onChange={[Function]}
+        placeholder="ESL Clan name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__item"
+    >
+      <TextFieldGroup
+        className="text-input"
+        name="eslUrl"
+        onChange={[Function]}
+        placeholder="ESL Clan website"
+        type="url"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="form__meta"
+  >
+    <button
+      className="button"
+    >
+      Save Clan
+    </button>
+  </div>
+</form>
+`;

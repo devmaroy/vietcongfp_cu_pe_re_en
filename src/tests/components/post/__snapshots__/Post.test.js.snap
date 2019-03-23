@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly Post with spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <Spinner
+      alt="Loading..."
+      imagePath="/images/loader.gif"
+      style={
+        Object {
+          "display": "block",
+          "margin": "60px",
+          "width": "80px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`should render post item and comment page 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <div>
+      <Connect(PostItem)
+        isSingle={true}
+        key="2"
+        post={
+          Object {
+            "body": "Our gallery was improved and we have now new better pictures",
+            "createdAt": 1200,
+            "id": "2",
+            "name": "JoshTh",
+            "title": "Gallery updated",
+          }
+        }
+        showActions={false}
+      />
+      <Connect(CommentPage)
+        postId="2"
+      />
+    </div>
+  </div>
+</div>
+`;

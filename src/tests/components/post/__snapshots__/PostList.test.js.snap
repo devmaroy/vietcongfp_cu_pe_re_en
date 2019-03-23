@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not show Pagination if length of posts is less than postsPerPage in state 1`] = `
+<div>
+  <div>
+    <div
+      className="posts"
+    >
+      <Connect(PostItem)
+        key="1"
+        post={
+          Object {
+            "body": "Even after 10 years we have new patch!",
+            "createdAt": 1000,
+            "id": "1",
+            "name": "JoshTh",
+            "title": "New patch",
+          }
+        }
+      />
+      <Connect(PostItem)
+        key="2"
+        post={
+          Object {
+            "body": "Our gallery was improved and we have now new better pictures",
+            "createdAt": 1200,
+            "id": "2",
+            "name": "JoshTh",
+            "title": "Gallery updated",
+          }
+        }
+      />
+      <Connect(PostItem)
+        key="3"
+        post={
+          Object {
+            "body": "Yes! We need more members in our team. Feel free to contact us.",
+            "createdAt": 1500,
+            "id": "3",
+            "name": "Patrick",
+            "title": "We are hiring!",
+          }
+        }
+      />
+      <Connect(PostItem)
+        key="4"
+        post={
+          Object {
+            "body": "As you can see we have new bug in our lovely game!",
+            "createdAt": 2000,
+            "id": "4",
+            "name": "Pete088",
+            "title": "Weird bug found",
+          }
+        }
+      />
+      <Connect(PostItem)
+        key="5"
+        post={
+          Object {
+            "body": "We have brand new section on our page with custom contact form",
+            "createdAt": 2300,
+            "id": "5",
+            "name": "JoshTh",
+            "title": "Contact form added to our website",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render PostList correctly with data 1`] = `
+<div>
+  <div>
+    <div
+      className="posts"
+    >
+      <Connect(PostItem)
+        key="1"
+        post={
+          Object {
+            "body": "Even after 10 years we have new patch!",
+            "createdAt": 1000,
+            "id": "1",
+            "name": "JoshTh",
+            "title": "New patch",
+          }
+        }
+      />
+      <Connect(PostItem)
+        key="2"
+        post={
+          Object {
+            "body": "Our gallery was improved and we have now new better pictures",
+            "createdAt": 1200,
+            "id": "2",
+            "name": "JoshTh",
+            "title": "Gallery updated",
+          }
+        }
+      />
+      <Connect(PostItem)
+        key="3"
+        post={
+          Object {
+            "body": "Yes! We need more members in our team. Feel free to contact us.",
+            "createdAt": 1500,
+            "id": "3",
+            "name": "Patrick",
+            "title": "We are hiring!",
+          }
+        }
+      />
+      <Connect(PostItem)
+        key="4"
+        post={
+          Object {
+            "body": "As you can see we have new bug in our lovely game!",
+            "createdAt": 2000,
+            "id": "4",
+            "name": "Pete088",
+            "title": "Weird bug found",
+          }
+        }
+      />
+      <Connect(PostItem)
+        key="5"
+        post={
+          Object {
+            "body": "We have brand new section on our page with custom contact form",
+            "createdAt": 2300,
+            "id": "5",
+            "name": "JoshTh",
+            "title": "Contact form added to our website",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render PostList with empty message 1`] = `
+<div>
+  <p>
+    There are no posts.
+  </p>
+</div>
+`;
+
+exports[`should show Pagination if length of posts is more than postsPerPage in state 1`] = `
+<div>
+  <div>
+    <div
+      className="posts"
+    >
+      <Connect(PostItem)
+        key="1"
+        post={
+          Object {
+            "body": "Even after 10 years we have new patch!",
+            "createdAt": 1000,
+            "id": "1",
+            "name": "JoshTh",
+            "title": "New patch",
+          }
+        }
+      />
+    </div>
+    <div
+      className="site-pagination"
+    >
+      <a
+        activePage={1}
+        firstPageText="«"
+        getPageUrl={[Function]}
+        hideFirstLastPages={false}
+        innerClass="pagination"
+        itemsCountPerPage={1}
+        lastPageText="»"
+        nextPageText="⟩"
+        onChange={[Function]}
+        pageRangeDisplayed={5}
+        prevPageText="⟨"
+        totalItemsCount={5}
+      />
+    </div>
+  </div>
+</div>
+`;

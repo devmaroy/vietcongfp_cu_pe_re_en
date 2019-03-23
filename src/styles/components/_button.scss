@@ -1,19 +1,46 @@
+/*------------------------------------*\
+    # Button
+\*------------------------------------*/
+
+
 .button {
-    background: $blue;
+    background: $off-green;
     border: none;
-    color: white;
+    color: $off-white;
     display: inline-block;
     font-size: $font-size-large;
     font-weight: 300;
     line-height: 1;
     padding: $s-size;
     text-decoration: none;
+    margin-right: $m-size;
+
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+        color: $off-white;
+        background: darken( $off-green, 5% );
+    }
+}
+
+.button--secondary {
+    background: $grey;
+    color: $off-white;
+
+    &:hover,
+    &:focus {
+        color: $off-white;
+        background: darken( $grey, 5% );
+    }
 }
 
 .button--link {
     background: none;
-}
+    padding: 0;
 
-.button--secondary {
-    background: #888;
+    &:hover,
+    &:focus {
+        background: none;
+    }
 }

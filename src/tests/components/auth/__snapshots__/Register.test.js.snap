@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render form inside Login 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <div>
+      <h2>
+        Sign Up
+      </h2>
+      <form
+        className="form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="name"
+              onChange={[Function]}
+              placeholder="Your name"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="email"
+              onChange={[Function]}
+              placeholder="Your email"
+              type="email"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="password"
+              onChange={[Function]}
+              placeholder="Your password"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="passwordConfirm"
+              onChange={[Function]}
+              placeholder="Confirm your password"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="form-meta"
+        >
+          <p>
+            Already have an account? 
+            <Link
+              replace={false}
+              to="/login"
+            >
+              Log In
+            </Link>
+          </p>
+          <button
+            className="button"
+          >
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render correctly Login without spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <div>
+      <h2>
+        Sign Up
+      </h2>
+      <form
+        className="form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="name"
+              onChange={[Function]}
+              placeholder="Your name"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="email"
+              onChange={[Function]}
+              placeholder="Your email"
+              type="email"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="password"
+              onChange={[Function]}
+              placeholder="Your password"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="input-group"
+        >
+          <div
+            className="input-group__item"
+          >
+            <TextFieldGroup
+              className="text-input"
+              name="passwordConfirm"
+              onChange={[Function]}
+              placeholder="Confirm your password"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="form-meta"
+        >
+          <p>
+            Already have an account? 
+            <Link
+              replace={false}
+              to="/login"
+            >
+              Log In
+            </Link>
+          </p>
+          <button
+            className="button"
+          >
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render correctly Register with spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <Spinner
+      alt="Loading..."
+      imagePath="/images/loader.gif"
+      style={
+        Object {
+          "display": "block",
+          "margin": "60px",
+          "width": "80px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

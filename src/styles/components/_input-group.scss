@@ -1,3 +1,10 @@
+/*------------------------------------*\
+    # Input Group
+\*------------------------------------*/
+
+
+/* Input Group */
+
 .input-group {
     display: flex;
     flex-direction: column;
@@ -9,10 +16,19 @@
     }
 }
 
+
+// Input Group Item */
+
 .input-group__item {
     margin-bottom: $s-size;
 
     @media ( min-width: $desktop-breakpoint ) {
         margin: 0 $s-size 0 0;
+    }
+}
+
+.input-group__item--desktop {
+    @media ( min-width: $desktop-breakpoint ) {
+        width: 100%;
     }
 }

@@ -19,27 +19,32 @@ class CommentList extends React.Component {
 
         return (
             <div>
+                <h3>Comments: { comments.length }</h3>
                 {
                     comments.length === 0 ? (
                         <p>There are no comments.</p>
                     ) : (
                         <div>
-                            <ul className="comments">
-                                 {
+                            <div className="comments">
+                                {
                                     comments
                                         .slice( ( activePage - 1 ) * commentsPerPage, ( commentsPerPage * activePage ) )
                                         .map( ( comment ) => <CommentItem key={ comment.id } comment={ comment } /> )
-                                 }
-                            </ul>
-                            <div>    
-                                <Pagination
-                                    activePage={ this.state.activePage }
-                                    itemsCountPerPage={ commentsPerPage }
-                                    totalItemsCount={ comments.length }
-                                    pageRangeDisplayed={ 5 }
-                                    onChange={ this.handlePageChange }
-                                />
-                            </div>
+                                }
+                            </div>  
+                            {  
+                                comments.length > commentsPerPage && (
+                                    <div className="site-pagination">
+                                        <Pagination
+                                            activePage={ this.state.activePage }
+                                            itemsCountPerPage={ commentsPerPage }
+                                            totalItemsCount={ comments.length }
+                                            pageRangeDisplayed={ 5 }
+                                            onChange={ this.handlePageChange }
+                                        />
+                                    </div>
+                                )
+                            }
                         </div>
                     )
                 }

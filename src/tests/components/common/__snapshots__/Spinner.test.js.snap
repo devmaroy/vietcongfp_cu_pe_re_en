@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render Spinner 1`] = `
+<div>
+  <img
+    alt="Loading..."
+    src="/images/loader.gif"
+    style={
+      Object {
+        "display": "block",
+        "margin": "60px",
+        "width": "80px",
+      }
+    }
+  />
+</div>
+`;

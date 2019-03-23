@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not show remove button if not authenticated 1`] = `
+<div
+  className="comment"
+>
+  <h3
+    className="comment__title"
+  >
+    Andy
+  </h3>
+  <div
+    className="comment__body"
+  >
+    <p
+      key="0"
+    >
+      Oh. Awesome!!!
+    </p>
+  </div>
+  <div
+    className="comment_meta"
+  >
+    <h5>
+      January 1st 1970, 1:00:01 am
+    </h5>
+  </div>
+</div>
+`;
+
+exports[`should render CommentItem correctly 1`] = `
+<div
+  className="comment"
+>
+  <h3
+    className="comment__title"
+  >
+    Andy
+  </h3>
+  <div
+    className="comment__body"
+  >
+    <p
+      key="0"
+    >
+      Oh. Awesome!!!
+    </p>
+  </div>
+  <div
+    className="comment_meta"
+  >
+    <h5>
+      January 1st 1970, 1:00:01 am
+    </h5>
+  </div>
+</div>
+`;
+
+exports[`should show remove button if authenticated 1`] = `
+<div
+  className="comment"
+>
+  <h3
+    className="comment__title"
+  >
+    Andy
+  </h3>
+  <div
+    className="comment__body"
+  >
+    <p
+      key="0"
+    >
+      Oh. Awesome!!!
+    </p>
+  </div>
+  <div
+    className="comment_meta"
+  >
+    <h5>
+      January 1st 1970, 1:00:01 am
+    </h5>
+    <button
+      className="button"
+      onClick={[Function]}
+    >
+      remove
+    </button>
+  </div>
+</div>
+`;

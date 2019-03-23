@@ -15,13 +15,19 @@ For any questions feel free to contact me at me@mwardew.com
 
 <br />
 
+### Demo account: https://vietcong-fp.mwardew.com/login
+email: josh@test.com
+password: 123456
+
+
+
 ![](screenshot.png)
 
 Requirements
 ============
 
-* React >= *****
-* ReactDOM >= *****
+* React >= 16.1.0
+* ReactDOM >= 16.4.2
 
 ... see package.json
 

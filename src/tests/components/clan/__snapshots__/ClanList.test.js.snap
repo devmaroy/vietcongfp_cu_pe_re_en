@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not show Pagination if length of clans is less than clansPerPage in state 1`] = `
+<div>
+  <div>
+    <table
+      className="clans"
+    >
+      <thead>
+        <tr>
+          <th>
+            Country
+          </th>
+          <th>
+            Tag
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Leader
+          </th>
+          <th>
+            Web
+          </th>
+          <th>
+            ESL
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "CZ",
+              "createdAt": 1000,
+              "eslName": "Dog Soldiers",
+              "eslUrl": "https://esl.com/team/110",
+              "id": "1",
+              "leader": "Lue09",
+              "name": "Dog Soldiers",
+              "tag": "doG",
+              "url": "https://dogsoldiers.cz/",
+            }
+          }
+          key="1"
+        />
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "RU",
+              "createdAt": 1200,
+              "eslName": "Fallen Angels",
+              "eslUrl": "https://esl.com/team/220",
+              "id": "2",
+              "leader": "Sueelo09",
+              "name": "Fallen Angels",
+              "tag": "FA",
+              "url": "https://fallenangels.ru/",
+            }
+          }
+          key="2"
+        />
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "NL",
+              "createdAt": 1500,
+              "eslName": "",
+              "eslUrl": "",
+              "id": "3",
+              "leader": "Nethis",
+              "name": "Killers in Action",
+              "tag": "KIA",
+              "url": "https://nethis.com/",
+            }
+          }
+          key="3"
+        />
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "US",
+              "createdAt": 2000,
+              "eslName": "OVS",
+              "eslUrl": "https://esl.com/team/444",
+              "id": "4",
+              "leader": "Mepi9s",
+              "name": "Old Vietcong Squad",
+              "tag": "OVS",
+              "url": "https://ovs-clan-vc.com/",
+            }
+          }
+          key="4"
+        />
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "DE",
+              "createdAt": 2300,
+              "eslName": "BSK-DE",
+              "eslUrl": "https://esl.com/team/798",
+              "id": "5",
+              "leader": "Hanys",
+              "name": "Best Squad Killers",
+              "tag": "BSK",
+              "url": "https://bsk-clan-vietcong.de/",
+            }
+          }
+          key="5"
+        />
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`should render ClanList correctly with data 1`] = `
+<div>
+  <div>
+    <table
+      className="clans"
+    >
+      <thead>
+        <tr>
+          <th>
+            Country
+          </th>
+          <th>
+            Tag
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Leader
+          </th>
+          <th>
+            Web
+          </th>
+          <th>
+            ESL
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "CZ",
+              "createdAt": 1000,
+              "eslName": "Dog Soldiers",
+              "eslUrl": "https://esl.com/team/110",
+              "id": "1",
+              "leader": "Lue09",
+              "name": "Dog Soldiers",
+              "tag": "doG",
+              "url": "https://dogsoldiers.cz/",
+            }
+          }
+          key="1"
+        />
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "RU",
+              "createdAt": 1200,
+              "eslName": "Fallen Angels",
+              "eslUrl": "https://esl.com/team/220",
+              "id": "2",
+              "leader": "Sueelo09",
+              "name": "Fallen Angels",
+              "tag": "FA",
+              "url": "https://fallenangels.ru/",
+            }
+          }
+          key="2"
+        />
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "NL",
+              "createdAt": 1500,
+              "eslName": "",
+              "eslUrl": "",
+              "id": "3",
+              "leader": "Nethis",
+              "name": "Killers in Action",
+              "tag": "KIA",
+              "url": "https://nethis.com/",
+            }
+          }
+          key="3"
+        />
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "US",
+              "createdAt": 2000,
+              "eslName": "OVS",
+              "eslUrl": "https://esl.com/team/444",
+              "id": "4",
+              "leader": "Mepi9s",
+              "name": "Old Vietcong Squad",
+              "tag": "OVS",
+              "url": "https://ovs-clan-vc.com/",
+            }
+          }
+          key="4"
+        />
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "DE",
+              "createdAt": 2300,
+              "eslName": "BSK-DE",
+              "eslUrl": "https://esl.com/team/798",
+              "id": "5",
+              "leader": "Hanys",
+              "name": "Best Squad Killers",
+              "tag": "BSK",
+              "url": "https://bsk-clan-vietcong.de/",
+            }
+          }
+          key="5"
+        />
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`should render ClanList with empty message 1`] = `
+<div>
+  <p>
+    There are no clans.
+  </p>
+</div>
+`;
+
+exports[`should show Pagination if length of clans is more than clansPerPage in state 1`] = `
+<div>
+  <div>
+    <table
+      className="clans"
+    >
+      <thead>
+        <tr>
+          <th>
+            Country
+          </th>
+          <th>
+            Tag
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Leader
+          </th>
+          <th>
+            Web
+          </th>
+          <th>
+            ESL
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <Connect(ClanItem)
+          clan={
+            Object {
+              "country": "CZ",
+              "createdAt": 1000,
+              "eslName": "Dog Soldiers",
+              "eslUrl": "https://esl.com/team/110",
+              "id": "1",
+              "leader": "Lue09",
+              "name": "Dog Soldiers",
+              "tag": "doG",
+              "url": "https://dogsoldiers.cz/",
+            }
+          }
+          key="1"
+        />
+      </tbody>
+    </table>
+    <div
+      className="site-pagination"
+    >
+      <a
+        activePage={1}
+        firstPageText="«"
+        getPageUrl={[Function]}
+        hideFirstLastPages={false}
+        innerClass="pagination"
+        itemsCountPerPage={1}
+        lastPageText="»"
+        nextPageText="⟩"
+        onChange={[Function]}
+        pageRangeDisplayed={5}
+        prevPageText="⟨"
+        totalItemsCount={5}
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -6,8 +6,9 @@ import TextFieldGroup from '../common/TextFieldGroup';
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import Spinner from '../common/Spinner';
 import history from '../../routers/history';
+import moment from 'moment';
 
-class CommentForm extends React.Component {
+export class CommentForm extends React.Component {
     state = {
         name: this.props.user ? this.props.user.name : '',
         body: '',
@@ -53,7 +54,7 @@ class CommentForm extends React.Component {
             const commentData = {
                 name: this.state.name,
                 body: this.state.body,
-                createdAt: Date.now(),
+                createdAt: moment().valueOf(),
                 postId: this.props.match.params.id
             };
             
@@ -67,23 +68,35 @@ class CommentForm extends React.Component {
         const { errors } = this.state;
   
         return (
-            <form onSubmit={ this.onSubmit }>
-                <TextFieldGroup 
-                    name="name"
-                    placeholder="Name"
-                    value={ this.state.name }
-                    onChange={ this.handleChange }
-                    error={ errors.name }
-                    disabled={ this.props.isAuthenticated }
-                />
-                <TextAreaFieldGroup 
-                    name="body"
-                    placeholder="Body"
-                    value={ this.state.body }
-                    onChange={ this.handleChange }
-                    error={ errors.body }
-                />
-                <button>Save Comment</button>
+            <form onSubmit={ this.onSubmit } className="form">
+                <div className="input-group">
+                    <div className="input-group__item">
+                        <TextFieldGroup 
+                            name="name"
+                            placeholder="Name"
+                            value={ this.state.name }
+                            onChange={ this.handleChange }
+                            error={ errors.name }
+                            disabled={ this.props.isAuthenticated }
+                            className="text-input"
+                        />
+                    </div>
+                </div>
+                <div className="input-group">
+                    <div className="input-group__item">
+                        <TextAreaFieldGroup 
+                            name="body"
+                            placeholder="Your message"
+                            value={ this.state.body }
+                            onChange={ this.handleChange }
+                            error={ errors.body }
+                            className="textarea"
+                        />
+                    </div>
+                </div>
+                <div className="form-meta">
+                    <button className="button">Save Comment</button>
+                </div>
             </form>
         );
     };

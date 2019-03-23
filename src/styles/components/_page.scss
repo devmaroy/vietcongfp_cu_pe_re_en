@@ -1,0 +1,117 @@
+/*------------------------------------*\
+    # Page
+\*------------------------------------*/
+
+
+/* Page */
+
+.page {
+    background: $off-white;
+    border: .8rem solid #5e5d5e;
+    border-radius: 1rem;
+    margin-top: $xl-size;
+    padding: $l-size;
+}
+
+
+/* Page Title */
+
+.page__title {
+    color: $off-green;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Margarine', cursive;
+
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+        color: darken( $off-green, 10% );
+    }
+}
+
+
+/* Page Body */
+
+.page__body {
+    margin: $l-size 0;
+    word-break: break-all; 
+}
+
+
+/* Page Meta */
+
+.page__meta {
+    margin-top: $xl-size;
+    color: $light-green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Page Item */
+/*
+.page-item {
+    margin-bottom: $xl-size;
+}
+
+.page-item__title {
+    color: $off-green;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Margarine', cursive;
+
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+        color: darken( $off-green, 10% );
+    }
+}*/

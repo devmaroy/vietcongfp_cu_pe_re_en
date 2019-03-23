@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render TextFieldGroup only with required props 1`] = `
+<div>
+  <input
+    disabled={false}
+    name="email"
+    onChange={[Function]}
+    type="email"
+    value="email@email.com"
+  />
+</div>
+`;
+
+exports[`should correctly render TextFieldGroup with all props 1`] = `
+<div>
+  <input
+    disabled={false}
+    name="email"
+    onChange={[Function]}
+    placeholder="Enter your email"
+    type="email"
+    value="emailemail.com"
+  />
+  <small>
+    This site uses Gravatar so if you want a profile image, use a Gravatar email
+  </small>
+  <div>
+    Email is not valid
+  </div>
+</div>
+`;

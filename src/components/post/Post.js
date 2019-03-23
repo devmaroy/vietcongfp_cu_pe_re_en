@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { startGetPost } from '../../actions/post';
+import { startGetPostById } from '../../actions/post';
 import Spinner from '../common/Spinner';
 import PostItem from './PostItem';
 import CommentPage from '../comment/CommentPage';
 
-class Post extends React.Component {
+export class Post extends React.Component {
     componentDidMount() {
-        this.props.startGetPost( this.props.match.params.id );
+        this.props.startGetPostById( this.props.match.params.id );
     };
 
     render() {
@@ -20,18 +20,24 @@ class Post extends React.Component {
         } else {
             postContent = (
                 <div>
-                     <PostItem key={ post.id } post={ post } showActions={ false } />
-                     <CommentPage postId={ post.id } />
+                    <PostItem key={ post.id } post={ post } showActions={ false } isSingle={ true } />
+                    <CommentPage postId={ post.id } />
                 </div>
             )
         }
 
-        return postContent;
+        return (
+            <div className="content-container">
+                <div className="page">
+                    { postContent }
+                </div>
+            </div>
+        );
     }
 }
 
 Post.propTypes = {
-    startGetPost: PropTypes.func.isRequired,
+    startGetPostById: PropTypes.func.isRequired,
     post: PropTypes.object.isRequired
 };
 
@@ -40,7 +46,7 @@ const mapStateToProps = ( state ) => ({
 });
 
 const mapDispatchToProps = ( dispatch ) => ({
-    startGetPost: ( id ) => dispatch( startGetPost( id ) )
+    startGetPostById: ( id ) => dispatch( startGetPostById( id ) )
 });
 
 export default connect( mapStateToProps, mapDispatchToProps )( Post );     

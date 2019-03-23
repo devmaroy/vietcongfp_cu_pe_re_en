@@ -1,4 +1,4 @@
-//Post Reducer
+// Post Reducer
 
 import {
     GET_POSTS,
@@ -9,13 +9,13 @@ import {
     GET_COMMENTS,
     ADD_COMMENT,
     REMOVE_COMMENT,
-    POST_LOADING,
+    SET_POST_LOADING,
     CLEAR_POST_LOADING,
-    COMMENT_LOADING,
+    SET_COMMENT_LOADING,
     CLEAR_COMMENT_LOADING
 } from '../actions/types';
 
-  const postReducerDefaultState = {
+const postReducerDefaultState = {
     posts: [],
     post: {},
     comments: [],
@@ -83,13 +83,13 @@ export default ( state = postReducerDefaultState, action ) => {
                 comments: state.comments.filter( ( comment ) => comment.id !== action.id )
             };
 
-        case POST_LOADING:
+        case SET_POST_LOADING:
             return {
                 ...state,
                 isPostLoading: true
             };
 
-        case COMMENT_LOADING:
+        case SET_COMMENT_LOADING:
             return {
                 ...state,
                 isCommentLoading: true

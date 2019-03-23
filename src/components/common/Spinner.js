@@ -21,7 +21,7 @@ Spinner.propTypes = {
 };
 
 Spinner.defaultProps = {
-    imagePath: '/images/giphy.gif',
+    imagePath: '/images/loader.gif',
     alt: 'Loading...',
     style: { width: '80px', margin: '60px', display: 'block' }
 };

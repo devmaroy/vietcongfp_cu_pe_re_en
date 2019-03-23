@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render form inside PostForm 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__item"
+    >
+      <TextFieldGroup
+        className="text-input"
+        name="name"
+        onChange={[Function]}
+        placeholder="Name"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="input-group"
+  >
+    <div
+      className="input-group__item"
+    >
+      <TextAreaFieldGroup
+        className="textarea"
+        name="body"
+        onChange={[Function]}
+        placeholder="Your message"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="form-meta"
+  >
+    <button
+      className="button"
+    >
+      Save Comment
+    </button>
+  </div>
+</form>
+`;

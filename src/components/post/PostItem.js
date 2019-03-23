@@ -3,27 +3,35 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
-//{ id, title, body, name, createdAt, showActions, isAuthenticated }
-const PostItem = ( props ) => {
-    const { post, isAuthenticated, showActions } = props;
-  
-    return (
-        <li>
-            <Link to={ `/posts/${ post.id }` }>
-                <h3>{ post.title }</h3>
-            </Link>
-            <p>{ post.body }</p>
-            <h4>Author: { post.name }</h4>
-            <h5>Date: { moment( post.createdAt ).format('MMMM Do YYYY, h:mm:ss a') }</h5>
+import { createParagraphs, limitText } from '../../utils/text-helper-functions';
 
-            { isAuthenticated && (
-                <Link to={ `/posts/${ post.id }/edit` }>edit</Link>
-            )}
+export const PostItem = ( props ) => {
+    const { post, isAuthenticated, showActions, isSingle } = props;
+    const postBody = isSingle ? createParagraphs( post.body ) : createParagraphs( limitText( post.body ) );
+
+    return (
+        <div className="post">
+            <Link to={ `/posts/${ post.id }` }>
+                <h1 className="page__title">{ post.title }</h1>
+            </Link>
+            
+            <div className="page__body">
+                { postBody }
+            </div>
+            
+            <div className="page__meta">
+                <h4>Author: { post.name }</h4>
+                <h5>{ moment( post.createdAt ).format('MMMM Do YYYY, h:mm:ss a') }</h5>
+            </div>
 
             { showActions && (
-                <Link to={ `/posts/${ post.id }` }>Read more</Link>
+                <Link to={ `/posts/${ post.id }` } className="button read-more-link">Read more</Link>
             )}
-        </li>
+
+            { isAuthenticated && (
+                <Link className="button edit-link" to={ `/posts/${ post.id }/edit` }>edit</Link>
+            )}
+        </div>
     );
 };
 
@@ -32,7 +40,8 @@ PostItem.propTypes = {
 }
 
 PostItem.defaultProps = {
-    showActions: true
+    showActions: true,
+    isSingle: false
 };
 
 const mapStateToProps = ( state ) => ({

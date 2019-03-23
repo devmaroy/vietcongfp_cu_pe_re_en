@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AddPostPage correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <h2>
+      Create Clan
+    </h2>
+    <ClanForm
+      onSubmit={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`should render ClanForm correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <h2>
+      Create Clan
+    </h2>
+    <ClanForm
+      onSubmit={[Function]}
+    />
+  </div>
+</div>
+`;

@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { startGetPost, startEditPost, startRemovePost } from '../../actions/post';
+import { startGetPostById, startEditPost, startRemovePost } from '../../actions/post';
 import Spinner from '../common/Spinner';
 import PostForm from './PostForm';
 
-class EditPostPage extends React.Component {
+export class EditPostPage extends React.Component {
     componentDidMount() {
-        this.props.startGetPost( this.props.match.params.id );
+        this.props.startGetPostById( this.props.match.params.id );
     };
 
     onRemove = () => {
@@ -23,30 +23,32 @@ class EditPostPage extends React.Component {
         let postEditContent;
 
         if ( post === null || isPostLoading || Object.keys( post ).length === 0 ) {
-            postEditContent = <Spinner />
+            postEditContent = <Spinner />;
         } else {
            postEditContent = (
-              <div>
-                    <h3>Edit Post</h3>
+               <div>
+                    <h2>Edit Post</h2>
                     <PostForm
                         onSubmit={ this.onSubmit }
                         post={ post }
                     />
-                    <button onClick={ this.onRemove }>Remove</button>
-              </div>
+                    <button onClick={ this.onRemove } className="button button--secondary">Remove</button>
+               </div>
            );
         }
 
         return (
-            <div>
-                { postEditContent }
+            <div className="content-container">
+                <div className="page">
+                    { postEditContent }
+                </div>
             </div>
-        );
+        )
     }
 }
 
 EditPostPage.propTypes = {
-    startGetPost: PropTypes.func.isRequired,
+    startGetPostById: PropTypes.func.isRequired,
     startRemovePost: PropTypes.func.isRequired,
     startEditPost: PropTypes.func.isRequired,
     post: PropTypes.object.isRequired
@@ -57,7 +59,7 @@ const mapStateToProps = ( state ) => ({
 });
 
 const mapDispatchToProps = ( dispatch ) => ({
-    startGetPost: ( id ) => dispatch( startGetPost( id ) ),
+    startGetPostById: ( id ) => dispatch( startGetPostById( id ) ),
     startEditPost: ( id, updates ) => dispatch( startEditPost( id, updates ) ),
     startRemovePost: ( id ) => dispatch( startRemovePost( id ) )
 });

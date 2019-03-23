@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    # Hero
+\*------------------------------------*/
+
+
+.hero {
+    background: url( '/images/backgroundtwo.jpg' );
+    background-size: cover;
+    border: .3rem solid #505250;
+    border-radius: .3rem;
+    height: 30rem;
+    margin-top: $m-size;
+    
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-content {
+    max-width: 55rem;
+    margin: 0 $m-size;
+}
+
+.hero-content__overlay {
+    background: rgba( black, .7 );
+    padding: $m-size;
+    color: $off-white;
+    text-align: center;
+}
+
+.hero-content__title {
+    text-transform: uppercase;
+}

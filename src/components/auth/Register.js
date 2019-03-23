@@ -4,9 +4,10 @@ import { connect } from 'react-redux';
 import validator from 'validator';
 import { Link } from 'react-router-dom';
 import { startRegister } from '../../actions/auth';
+import TextFieldGroup from '../common/TextFieldGroup';
 import Spinner from '../common/Spinner';
 
-class Register extends React.Component {
+export class Register extends React.Component {
     state = {
         name: '',
         email: '',
@@ -31,34 +32,34 @@ class Register extends React.Component {
         // Name
         if ( ! this.state.name ) {
             formIsValid = false;
-            errors[ 'nameError' ] = 'Name cannot be empty.';
+            errors[ 'name' ] = 'Name cannot be empty.';
         }
 
         // Email
         if ( ! this.state.email ) {
             formIsValid = false;
-            errors[ 'emailError' ] = 'Email cannot be empty.';
+            errors[ 'email' ] = 'Email cannot be empty.';
         } else if ( ! validator.isEmail( this.state.email ) ) {
             formIsValid = false;
-            errors[ 'emailError' ] = 'The email address is badly formatted.';
+            errors[ 'email' ] = 'The email address is badly formatted.';
         }
 
         // Password
         if ( ! this.state.password ) {
             formIsValid = false;
-            errors[ 'passwordError' ] = 'Password cannot be empty.';
+            errors[ 'password' ] = 'Password cannot be empty.';
         } else if ( this.state.password.length < 6 ) {
             formIsValid = false;
-            errors[ 'passwordError' ] = 'The password must be 6 characters long or more.';
+            errors[ 'password' ] = 'The password must be 6 characters long or more.';
         }
 
         // Password confirm
         if ( ! this.state.passwordConfirm ) {
             formIsValid = false;
-            errors[ 'passwordConfirmError' ] = 'Password confirm cannot be empty.';
+            errors[ 'passwordConfirm' ] = 'Password confirm cannot be empty.';
         } else if ( this.state.passwordConfirm !== this.state.password ) {
             formIsValid = false;
-            errors[ 'passwordConfirmError' ] = 'Password confirm do not match with your password.';
+            errors[ 'passwordConfirm' ] = 'Password confirm do not match with your password.';
         }
 
         this.setState( () => ( { errors } ) );
@@ -86,7 +87,7 @@ class Register extends React.Component {
     };
 
     render() {
-        const { nameError, emailError, passwordError, passwordConfirmError, authError } = this.state.errors;
+        const { errors } = this.state;
         const { isLoading } = this.props.auth;
 
         let registerContent;
@@ -97,54 +98,73 @@ class Register extends React.Component {
             registerContent = (
                 <div>
                     <h2>Sign Up</h2>
-                    <form onSubmit={ this.onSubmit }>
-                        { authError && <p>{ authError }</p> }
-                        <input 
-                            type="text"
-                            name="name"
-                            placeholder="Your name"
-                            onChange={ this.handleChange }
-                            value={ this.state.name }
-                        />
-                        <br/>
-                        { nameError && <p>{ nameError }</p> }
-                        <input 
-                            type="text"
-                            name="email"
-                            placeholder="Your email"
-                            onChange={ this.handleChange }
-                            value={ this.state.email }
-                        />
-                        <br/>
-                        { emailError && <p>{ emailError }</p> }
-                        <input 
-                            type="password"
-                            name="password"
-                            placeholder="Your password"
-                            onChange={ this.handleChange }
-                            value={ this.state.password }
-                        />
-                        <br/>
-                        { passwordError && <p>{ passwordError }</p> }
-                        <input 
-                            type="password"
-                            name="passwordConfirm"
-                            placeholder="Confirm your password"
-                            onChange={ this.handleChange }
-                            value={ this.state.passwordConfirm } 
-                        />
-                        <br/>
-                        { passwordConfirmError && <p>{ passwordConfirmError }</p> }
-                        <p>Already have an account? <Link to="/login">Log In</Link></p>
-                        <button>Sign Up</button>
+                    <form onSubmit={ this.onSubmit } className="form">
+                        { errors.authError && <p>{ errors.authError }</p> }
+                        <div className="input-group">
+                            <div className="input-group__item">
+                                <TextFieldGroup 
+                                    name="name"
+                                    placeholder="Your name"
+                                    value={ this.state.name }
+                                    onChange={ this.handleChange }
+                                    error={ errors.name }
+                                    className="text-input"
+                                />
+                            </div>
+                        </div>
+                        <div className="input-group">
+                            <div className="input-group__item">                                
+                                <TextFieldGroup 
+                                    type="email"
+                                    name="email"
+                                    placeholder="Your email"
+                                    value={ this.state.email }
+                                    onChange={ this.handleChange }
+                                    error={ errors.email }
+                                    className="text-input"
+                                />
+                            </div>
+                        </div>
+                        <div className="input-group">
+                            <div className="input-group__item">
+                                <TextFieldGroup 
+                                    type="password"
+                                    name="password"
+                                    placeholder="Your password"
+                                    value={ this.state.password }
+                                    onChange={ this.handleChange }
+                                    error={ errors.email }
+                                    className="text-input"
+                                />
+                            </div>
+                        </div>
+                        <div className="input-group">
+                            <div className="input-group__item">
+                                <TextFieldGroup 
+                                    type="password"
+                                    name="passwordConfirm"
+                                    placeholder="Confirm your password"
+                                    value={ this.state.passwordConfirm }
+                                    onChange={ this.handleChange }
+                                    error={ errors.email }
+                                    className="text-input"
+                                />
+                            </div>
+                        </div>
+                        <div className="form-meta">
+                            <p>Already have an account? <Link to="/login">Log In</Link></p>
+                            <button className="button">Sign Up</button>
+                        </div>
                     </form>
                 </div>
             );
         }
 
         return (
-            <div>
-                { registerContent }
+            <div className="content-container">
+                <div className="page">
+                    { registerContent }
+                </div>
             </div>
         );
     };
@@ -152,7 +172,7 @@ class Register extends React.Component {
 
 Register.propTypes = {
     auth: PropTypes.object.isRequired,
-    errors: PropTypes.object.isRequired,
+    errors: PropTypes.object,
     startRegister: PropTypes.func.isRequired
 };
 

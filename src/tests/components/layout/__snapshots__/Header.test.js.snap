@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly for logged in user 1`] = `
+<div
+  className="content-container"
+>
+  <header
+    className="header"
+  >
+    <div
+      className="header-content"
+    >
+      <button
+        className="hamburger-menu"
+        onClick={[Function]}
+      >
+        <span
+          className="hamburger-menu__icon"
+        />
+      </button>
+      <nav
+        className="header-nav"
+      >
+        <ul
+          className="header-nav__list list-unstyled"
+        >
+          <li
+            className="header-nav__list-item"
+          >
+            <NavLink
+              activeClassName="header-nav__item--active"
+              className="header-nav__item"
+              exact={true}
+              to="/"
+            >
+              Homepage
+            </NavLink>
+          </li>
+          <li
+            className="header-nav__list-item"
+          >
+            <NavLink
+              activeClassName="header-nav__item--active"
+              className="header-nav__item"
+              to="/about"
+            >
+              About vietcong
+            </NavLink>
+          </li>
+          <li
+            className="header-nav__list-item"
+          >
+            <NavLink
+              activeClassName="header-nav__item--active"
+              className="header-nav__item"
+              to="/clans"
+            >
+              Clans
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div
+      className="header-meta"
+    >
+      <div
+        className="header-controls"
+      >
+        <h3
+          className="header-controls__title"
+        >
+          Josh
+        </h3>
+        <Link
+          className="button add-post"
+          replace={false}
+          to="/posts/create"
+        >
+          Add post
+        </Link>
+        <Link
+          className="button add-clan"
+          replace={false}
+          to="/clans/create"
+        >
+          Add clan
+        </Link>
+        <button
+          className="button button--link logout-link"
+          onClick={[Function]}
+        >
+          Logout
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`should render Header correctly for no login user 1`] = `
+<div
+  className="content-container"
+>
+  <header
+    className="header"
+  >
+    <div
+      className="header-content"
+    >
+      <button
+        className="hamburger-menu"
+        onClick={[Function]}
+      >
+        <span
+          className="hamburger-menu__icon"
+        />
+      </button>
+      <nav
+        className="header-nav"
+      >
+        <ul
+          className="header-nav__list list-unstyled"
+        >
+          <li
+            className="header-nav__list-item"
+          >
+            <NavLink
+              activeClassName="header-nav__item--active"
+              className="header-nav__item"
+              exact={true}
+              to="/"
+            >
+              Homepage
+            </NavLink>
+          </li>
+          <li
+            className="header-nav__list-item"
+          >
+            <NavLink
+              activeClassName="header-nav__item--active"
+              className="header-nav__item"
+              to="/about"
+            >
+              About vietcong
+            </NavLink>
+          </li>
+          <li
+            className="header-nav__list-item"
+          >
+            <NavLink
+              activeClassName="header-nav__item--active"
+              className="header-nav__item"
+              to="/clans"
+            >
+              Clans
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+`;

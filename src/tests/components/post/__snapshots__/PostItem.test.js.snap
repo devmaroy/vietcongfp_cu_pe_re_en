@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should not show edit link if not authenticated 1`] = `
+<div
+  className="post"
+>
+  <Link
+    replace={false}
+    to="/posts/1"
+  >
+    <h1
+      className="page__title"
+    >
+      New patch
+    </h1>
+  </Link>
+  <div
+    className="page__body"
+  >
+    <p
+      key="0"
+    >
+      Even after 10 years we have new patch!
+    </p>
+  </div>
+  <div
+    className="page__meta"
+  >
+    <h4>
+      Author: 
+      JoshTh
+    </h4>
+    <h5>
+      January 1st 1970, 1:00:01 am
+    </h5>
+  </div>
+  <Link
+    className="button read-more-link"
+    replace={false}
+    to="/posts/1"
+  >
+    Read more
+  </Link>
+</div>
+`;
+
+exports[`should not show read more link if showActions is false 1`] = `
+<div
+  className="post"
+>
+  <Link
+    replace={false}
+    to="/posts/1"
+  >
+    <h1
+      className="page__title"
+    >
+      New patch
+    </h1>
+  </Link>
+  <div
+    className="page__body"
+  >
+    <p
+      key="0"
+    >
+      Even after 10 years we have new patch!
+    </p>
+  </div>
+  <div
+    className="page__meta"
+  >
+    <h4>
+      Author: 
+      JoshTh
+    </h4>
+    <h5>
+      January 1st 1970, 1:00:01 am
+    </h5>
+  </div>
+</div>
+`;
+
+exports[`should render PostItem correctly 1`] = `
+<div
+  className="post"
+>
+  <Link
+    replace={false}
+    to="/posts/1"
+  >
+    <h1
+      className="page__title"
+    >
+      New patch
+    </h1>
+  </Link>
+  <div
+    className="page__body"
+  >
+    <p
+      key="0"
+    >
+      Even after 10 years we have new patch!
+    </p>
+  </div>
+  <div
+    className="page__meta"
+  >
+    <h4>
+      Author: 
+      JoshTh
+    </h4>
+    <h5>
+      January 1st 1970, 1:00:01 am
+    </h5>
+  </div>
+  <Link
+    className="button read-more-link"
+    replace={false}
+    to="/posts/1"
+  >
+    Read more
+  </Link>
+</div>
+`;
+
+exports[`should show edit link if authenticated 1`] = `
+<div
+  className="post"
+>
+  <Link
+    replace={false}
+    to="/posts/1"
+  >
+    <h1
+      className="page__title"
+    >
+      New patch
+    </h1>
+  </Link>
+  <div
+    className="page__body"
+  >
+    <p
+      key="0"
+    >
+      Even after 10 years we have new patch!
+    </p>
+  </div>
+  <div
+    className="page__meta"
+  >
+    <h4>
+      Author: 
+      JoshTh
+    </h4>
+    <h5>
+      January 1st 1970, 1:00:01 am
+    </h5>
+  </div>
+  <Link
+    className="button read-more-link"
+    replace={false}
+    to="/posts/1"
+  >
+    Read more
+  </Link>
+  <Link
+    className="button edit-link"
+    replace={false}
+    to="/posts/1/edit"
+  >
+    edit
+  </Link>
+</div>
+`;
+
+exports[`should show read more link if showActions is true 1`] = `
+<div
+  className="post"
+>
+  <Link
+    replace={false}
+    to="/posts/1"
+  >
+    <h1
+      className="page__title"
+    >
+      New patch
+    </h1>
+  </Link>
+  <div
+    className="page__body"
+  >
+    <p
+      key="0"
+    >
+      Even after 10 years we have new patch!
+    </p>
+  </div>
+  <div
+    className="page__meta"
+  >
+    <h4>
+      Author: 
+      JoshTh
+    </h4>
+    <h5>
+      January 1st 1970, 1:00:01 am
+    </h5>
+  </div>
+  <Link
+    className="button read-more-link"
+    replace={false}
+    to="/posts/1"
+  >
+    Read more
+  </Link>
+</div>
+`;

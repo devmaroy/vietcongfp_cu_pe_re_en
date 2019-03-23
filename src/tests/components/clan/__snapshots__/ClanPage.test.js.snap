@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly ClanList 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <h1
+      className="page__title"
+    >
+      Clans
+    </h1>
+    <ClanList
+      clans={Array []}
+    />
+  </div>
+</div>
+`;
+
+exports[`should render correctly ClanPage with spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <h1
+      className="page__title"
+    >
+      Clans
+    </h1>
+    <Spinner
+      alt="Loading..."
+      imagePath="/images/loader.gif"
+      style={
+        Object {
+          "display": "block",
+          "margin": "60px",
+          "width": "80px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

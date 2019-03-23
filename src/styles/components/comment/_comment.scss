@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    # Comment
+\*------------------------------------*/
+
+
+.comment-add {
+    margin: $xl-size 0;
+}
+
+.comment {
+    padding: $m-size 0;
+
+    &:not( :last-child ) {
+        border-bottom: .1rem dashed lighten( $light-green, 45% );
+    }
+}
+
+.comment__title {
+    color: $off-green;
+}
+
+.comment .star-icon {
+    position: relative;
+    top: .2rem;
+    margin-left: .5rem;
+}

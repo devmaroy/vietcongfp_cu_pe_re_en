@@ -5,7 +5,7 @@ import { startGetPosts } from '../../actions/post';
 import Spinner from '../common/Spinner';
 import PostList from './PostList';
 
-class PostPage extends React.Component {
+export class PostPage extends React.Component {
     componentDidMount() {
         this.props.startGetPosts();
     };
@@ -15,14 +15,16 @@ class PostPage extends React.Component {
         let postsContent;
 
         if ( posts === null || isPostLoading ) {
-            postsContent = <Spinner />
+            postsContent = <Spinner />;
         } else {
            postsContent = <PostList posts={ posts } />;
         }
 
         return (
-            <div>
-                { postsContent }
+            <div className="content-container">
+                <div className="page">
+                    { postsContent }
+                </div>
             </div>
         );
     }

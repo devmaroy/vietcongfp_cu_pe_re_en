@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render TextAreaFieldGroup only with required props 1`] = `
+<div>
+  <textarea
+    name="body"
+    onChange={[Function]}
+    value="Some text here"
+  />
+</div>
+`;
+
+exports[`should correctly render TextAreaFieldGroup with all props 1`] = `
+<div>
+  <textarea
+    disabled={false}
+    name="body"
+    onChange={[Function]}
+    placeholder="Enter your message"
+    value="Some"
+  />
+  <small>
+    This message will be under posts
+  </small>
+  <div>
+    Please enter at least 10 characters
+  </div>
+</div>
+`;

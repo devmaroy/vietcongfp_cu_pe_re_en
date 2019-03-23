@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render ErrorPage 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <h1
+      className="page__title"
+    >
+      Aaaah! Something went wrong.
+    </h1>
+    <div
+      className="page_body"
+    >
+      <p>
+        Maybe the page or item you were looking for doesn't exist or something else is broken.
+      </p>
+      <p>
+        Sorry :(
+      </p>
+    </div>
+    <div
+      className="page__meta"
+    >
+      <img
+        alt="Ron Swanson Throwing Away His Computer"
+        className="error-image"
+        src="/images/badbad.gif"
+        title="Ron Swanson Throwing Away His Computer"
+      />
+      <Link
+        className="button"
+        replace={false}
+        to="/"
+      >
+        Go home
+      </Link>
+    </div>
+  </div>
+</div>
+`;

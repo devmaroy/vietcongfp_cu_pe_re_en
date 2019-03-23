@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TextFieldGroup = ( { name, placeholder, value, label, error, info, type, onChange, disabled } ) => {
+const TextFieldGroup = ( { name, placeholder, value, error, info, type, onChange, disabled, className } ) => {
     return (
         <div>
             <input
@@ -11,6 +11,7 @@ const TextFieldGroup = ( { name, placeholder, value, label, error, info, type, o
                 value={ value }
                 onChange={ onChange }
                 disabled={ disabled }
+                className={ className }
             />
             { info && <small>{ info }</small> }
             { error && <div>{ error }</div> }
@@ -26,7 +27,8 @@ TextFieldGroup.propTypes = {
     error: PropTypes.string,
     type: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
-    disabled: PropTypes.bool
+    disabled: PropTypes.bool,
+    className: PropTypes.string
 };
   
 TextFieldGroup.defaultProps = {

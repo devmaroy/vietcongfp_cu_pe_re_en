@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render SelectFieldGroup only with required props 1`] = `
+<div>
+  <select
+    name="countries"
+    onChange={[Function]}
+    value="AF"
+  >
+    <option
+      key="0"
+      value="AF"
+    >
+      Afghanistan
+    </option>
+    <option
+      key="1"
+      value="AX"
+    >
+      Åland Islands
+    </option>
+    <option
+      key="2"
+      value="AL"
+    >
+      Albania
+    </option>
+    <option
+      key="3"
+      value="DZ"
+    >
+      Algeria
+    </option>
+  </select>
+</div>
+`;
+
+exports[`should correctly render TextFieldGroup with all props 1`] = `
+<div>
+  <select
+    className="select"
+    name="countries"
+    onChange={[Function]}
+    value="AF"
+  >
+    <option
+      key="0"
+      value="AF"
+    >
+      Afghanistan
+    </option>
+    <option
+      key="1"
+      value="AX"
+    >
+      Åland Islands
+    </option>
+    <option
+      key="2"
+      value="AL"
+    >
+      Albania
+    </option>
+    <option
+      key="3"
+      value="DZ"
+    >
+      Algeria
+    </option>
+  </select>
+  <small>
+    Choose your country
+  </small>
+</div>
+`;

@@ -1,3 +1,10 @@
+/*------------------------------------*\
+    # Loader
+\*------------------------------------*/
+
+
+/* Loader */
+
 .loader {
     align-items: center;
     display: flex;
@@ -5,6 +12,9 @@
     justify-content: center;
     width: 100vw;
 }
+
+
+/* Loader Image */
 
 .loader__image {
     height: 6rem;

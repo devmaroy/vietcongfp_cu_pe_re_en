@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import CommentForm from './CommentForm';
-import { startAddComment } from '../../actions/post';
+import { startAddComment } from '../../actions/comment';
 
-class AddCommentPage extends React.Component {
+export class AddCommentPage extends React.Component {
     onSubmit = ( commentData ) => {
         this.props.startAddComment( commentData );
     };
 
     render() {
         return (
-            <div>
+            <div className="comment-add">
                 <CommentForm 
                     onSubmit={ this.onSubmit }
                 />

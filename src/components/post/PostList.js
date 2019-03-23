@@ -24,22 +24,26 @@ class PostList extends React.Component {
                         <p>There are no posts.</p>
                     ) : (
                         <div>
-                            <ul className="posts">
-                                 {
-                                     posts
+                            <div className="posts">
+                                {
+                                    posts
                                         .slice( ( activePage - 1 ) * postsPerPage, ( postsPerPage * activePage ) )
                                         .map( ( post ) => <PostItem key={ post.id } post={ post } /> )
-                                 }
-                            </ul>
-                            <div>    
-                                <Pagination
-                                    activePage={ this.state.activePage }
-                                    itemsCountPerPage={ postsPerPage }
-                                    totalItemsCount={ posts.length }
-                                    pageRangeDisplayed={ 5 }
-                                    onChange={ this.handlePageChange }
-                                />
+                                }
                             </div>
+                            {
+                                posts.length > postsPerPage && (
+                                    <div className="site-pagination">
+                                        <Pagination
+                                            activePage={ this.state.activePage }
+                                            itemsCountPerPage={ postsPerPage }
+                                            totalItemsCount={ posts.length }
+                                            pageRangeDisplayed={ 5 }
+                                            onChange={ this.handlePageChange }
+                                        />
+                                    </div>
+                                )
+                            }
                         </div>
                     )
                 }

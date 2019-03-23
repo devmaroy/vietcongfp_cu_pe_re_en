@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly PostList 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <PostList
+      posts={Array []}
+    />
+  </div>
+</div>
+`;
+
+exports[`should render correctly PostPage with spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <Spinner
+      alt="Loading..."
+      imagePath="/images/loader.gif"
+      style={
+        Object {
+          "display": "block",
+          "margin": "60px",
+          "width": "80px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

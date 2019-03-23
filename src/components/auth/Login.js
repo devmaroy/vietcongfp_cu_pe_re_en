@@ -4,9 +4,10 @@ import { connect } from 'react-redux';
 import validator from 'validator';
 import { Link } from 'react-router-dom';
 import { startLogin } from '../../actions/auth';
+import TextFieldGroup from '../common/TextFieldGroup';
 import Spinner from '../common/Spinner';
 
-class Login extends React.Component {
+export class Login extends React.Component {
     state = {
         email: '',
         password: '',
@@ -29,16 +30,16 @@ class Login extends React.Component {
         // Email
         if ( ! this.state.email ) {
             formIsValid = false;
-            errors[ 'emailError' ] = 'Email cannot be empty.';
+            errors[ 'email' ] = 'Email cannot be empty.';
         } else if ( ! validator.isEmail( this.state.email ) ) {
             formIsValid = false;
-            errors[ 'emailError' ] = 'Email is invalid.';
+            errors[ 'email' ] = 'Email is invalid.';
         }
 
         // Password
         if ( ! this.state.password ) {
             formIsValid = false;
-            errors[ 'passwordError' ] = 'Password cannot be empty.';
+            errors[ 'password' ] = 'Password cannot be empty.';
         }
 
         this.setState( () => ( { errors } ) );
@@ -66,7 +67,7 @@ class Login extends React.Component {
     };
 
     render() {
-        const { emailError, passwordError, authError } = this.state.errors;
+        const { errors } = this.state;
         const { isLoading } = this.props.auth;
 
         let loginContent;
@@ -77,36 +78,47 @@ class Login extends React.Component {
             loginContent = (
                 <div>
                     <h2>Sign In</h2>
-                    <form onSubmit={ this.onSubmit }>
-                        { authError && <p>{ authError }</p> }
-                        <input 
-                            type="text"
-                            name="email"
-                            placeholder="Your email"
-                            onChange={ this.handleChange }
-                            value={ this.state.email }
-                        />
-                        <br/>
-                        { emailError && <p>{ emailError }</p> }
-                        <input 
-                            type="password"
-                            name="password"
-                            placeholder="Your password"
-                            onChange={ this.handleChange }
-                            value={ this.state.password }
-                        />
-                        <br/>
-                        { passwordError && <p>{ passwordError }</p> }
-                        <p>Don't have an account? <Link to="/register">Sign Up</Link></p>
-                        <button>Sign In</button>
+                    <form onSubmit={ this.onSubmit } className="form">
+                        { errors.authError && <p>{ errors.authError }</p> }
+                        <div className="input-group">
+                            <div className="input-group__item">
+                                <TextFieldGroup 
+                                    name="email"
+                                    placeholder="Your email"
+                                    value={ this.state.email }
+                                    onChange={ this.handleChange }
+                                    error={ errors.email }
+                                    className="text-input"
+                                />
+                            </div>
+                        </div>
+                        <div className="input-group">
+                            <div className="input-group__item">
+                                <TextFieldGroup 
+                                    type="password"
+                                    name="password"
+                                    placeholder="Your password"
+                                    value={ this.state.password }
+                                    onChange={ this.handleChange }
+                                    error={ errors.password }
+                                    className="text-input"
+                                />
+                            </div>
+                        </div>
+                        <div className="form-meta">
+                            <p>Don't have an account? <Link to="/register">Sign Up</Link></p>
+                            <button className="button">Sign In</button>
+                        </div>
                     </form>
                 </div>
             );
         }
 
         return (
-            <div>
-                { loginContent }
+            <div className="content-container">
+                <div className="page">
+                    { loginContent }
+                </div>
             </div>
         );
     };
@@ -114,7 +126,7 @@ class Login extends React.Component {
 
 Login.propTypes = {
     auth: PropTypes.object.isRequired,
-    errors: PropTypes.object.isRequired,
+    errors: PropTypes.object,
     startLogin: PropTypes.func.isRequired
 };
 

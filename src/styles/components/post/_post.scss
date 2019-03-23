@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    # Post
+\*------------------------------------*/
+
+
+/* Post */
+.post {
+    padding-bottom: $xl-size;
+
+    &:not( :last-child ) {
+        border-bottom: .1rem dashed lighten( $light-green, 45% );
+    }
+}

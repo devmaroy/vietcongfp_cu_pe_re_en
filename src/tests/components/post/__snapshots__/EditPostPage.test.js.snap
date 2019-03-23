@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PostForm correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <div>
+      <h2>
+        Edit Post
+      </h2>
+      <Connect(PostForm)
+        onSubmit={[Function]}
+        post={
+          Object {
+            "body": "Even after 10 years we have new patch!",
+            "createdAt": 1000,
+            "id": "1",
+            "name": "JoshTh",
+            "title": "New patch",
+          }
+        }
+      />
+      <button
+        className="button button--secondary"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render correctly EditPostPage with spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <Spinner
+      alt="Loading..."
+      imagePath="/images/loader.gif"
+      style={
+        Object {
+          "display": "block",
+          "margin": "60px",
+          "width": "80px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`should render correctly EditPostPage without spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <div>
+      <h2>
+        Edit Post
+      </h2>
+      <Connect(PostForm)
+        onSubmit={[Function]}
+        post={
+          Object {
+            "body": "Even after 10 years we have new patch!",
+            "createdAt": 1000,
+            "id": "1",
+            "name": "JoshTh",
+            "title": "New patch",
+          }
+        }
+      />
+      <button
+        className="button button--secondary"
+        onClick={[Function]}
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+</div>
+`;

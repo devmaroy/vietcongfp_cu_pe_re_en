@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    # Header
+\*------------------------------------*/
+
+
+/* Header */
+
+.header {
+    background: $green;
+    border-bottom: .2rem solid $off-green;
+    margin-top: $xl-size;
+    padding: 0 $m-size;
+
+    @media ( min-width: $desktop-breakpoint ) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+/* Header Content */
+
+.header-content {
+    text-align: center;
+
+    @media ( min-width: $desktop-breakpoint ) {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+    }
+}
+
+
+/* Header Meta */
+
+.header-meta {
+    padding-bottom: $l-size;
+}
+
+
+/* Header Controls */
+
+.header-controls__title {
+    color: $off-white;
+    margin-bottom: $l-size;
+}
+
+.header-controls {
+    text-align: center;
+
+    @media ( min-width: $desktop-breakpoint ) {
+        text-align: left;
+    }
+}

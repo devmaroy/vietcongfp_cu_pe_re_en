@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AddPostPage correctly 1`] = `
+<div
+  className="comment-add"
+>
+  <Connect(withRouter(CommentForm))
+    onSubmit={[Function]}
+  />
+</div>
+`;

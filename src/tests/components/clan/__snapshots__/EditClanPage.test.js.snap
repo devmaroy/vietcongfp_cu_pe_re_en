@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ClanForm correctly 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <div>
+      <h2>
+        Edit Clan
+      </h2>
+      <ClanForm
+        clan={
+          Object {
+            "country": "CZ",
+            "createdAt": 1000,
+            "eslName": "Dog Soldiers",
+            "eslUrl": "https://esl.com/team/110",
+            "id": "1",
+            "leader": "Lue09",
+            "name": "Dog Soldiers",
+            "tag": "doG",
+            "url": "https://dogsoldiers.cz/",
+          }
+        }
+        onSubmit={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render correctly EditClanPage with spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <Spinner
+      alt="Loading..."
+      imagePath="/images/loader.gif"
+      style={
+        Object {
+          "display": "block",
+          "margin": "60px",
+          "width": "80px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`should render correctly EditClanPage without spinner 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="page"
+  >
+    <div>
+      <h2>
+        Edit Clan
+      </h2>
+      <ClanForm
+        clan={
+          Object {
+            "country": "CZ",
+            "createdAt": 1000,
+            "eslName": "Dog Soldiers",
+            "eslUrl": "https://esl.com/team/110",
+            "id": "1",
+            "leader": "Lue09",
+            "name": "Dog Soldiers",
+            "tag": "doG",
+            "url": "https://dogsoldiers.cz/",
+          }
+        }
+        onSubmit={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;

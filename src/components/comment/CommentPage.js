@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { startGetCommentsByPostId } from '../../actions/post';
+import { startGetCommentsByPostId } from '../../actions/comment';
 import CommentList from './CommentList';
 import AddCommentPage from '../comment/AddCommentPage';
 import Spinner from '../common/Spinner';
 
-class CommentPage extends React.Component {
+export class CommentPage extends React.Component {
     componentDidMount() {
         this.props.startGetCommentsByPostId( this.props.postId );
     }

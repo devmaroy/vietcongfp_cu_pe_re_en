@@ -38,7 +38,7 @@ export const startLogin = ( { email, password } ) => {
                 dispatch({
                     type: GET_ERRORS,
                     payload: err 
-                })
+                });
 
                 dispatch( clearAuthLoading() );
             });
@@ -68,12 +68,13 @@ export const startRegister = ( { name, email, password } ) => {
                 dispatch({
                     type: GET_ERRORS,
                     payload: err
-                })
+                });
 
                 dispatch( clearAuthLoading() );
             });
     };
 };
+
 
 // Logout
 export const startLogout = () => {
@@ -94,6 +95,7 @@ export const startLogout = () => {
 };
 
 
+// Logout
 export const logout = () => ({
     type: LOGOUT
 });
