@@ -67,7 +67,7 @@ export class PostForm extends React.Component {
         return (
             <form onSubmit={ this.onSubmit } className="form">
                 <div className="input-group">
-                    <div className="input-group__item input-group__item--desktop">
+                    <div className="input-group__item">
                         <TextFieldGroup 
                             name="title"
                             placeholder="Title"
@@ -79,14 +79,14 @@ export class PostForm extends React.Component {
                     </div>
                 </div>
                 <div className="input-group">
-                    <div className="input-group__item input-group__item--desktop">
+                    <div className="input-group__item">
                         <TextAreaFieldGroup
                             name="body"
                             placeholder="Text"
                             value={ this.state.body }
                             onChange={ this.handleChange }
                             error={ errors.body }
-                            className="textarea textarea--desktop"
+                            className="textarea textarea--lg"
                         />
                     </div>
                 </div>

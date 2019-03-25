@@ -10,10 +10,10 @@
     flex-direction: column;
     margin-bottom: $m-size;
 
-    @media ( min-width: $desktop-breakpoint ) {
+   /* @media ( min-width: $desktop-breakpoint ) {
         flex-direction: row;
         margin-bottom: $l-size;
-    }
+    }*/
 }
 
 
@@ -27,8 +27,8 @@
     }
 }
 
-.input-group__item--desktop {
+/*.input-group__item--desktop {
     @media ( min-width: $desktop-breakpoint ) {
         width: 100%;
     }
-}
+}*/

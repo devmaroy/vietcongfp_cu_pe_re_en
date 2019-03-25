@@ -11,7 +11,7 @@
     border-radius: 0;
     background: white;
     height: 5rem;
-    width: 45rem;
+    width: 100%;
     outline: none;
     font-size: $font-size-large;
     font-weight: 300;
@@ -26,6 +26,10 @@
     &:disabled {
         cursor: not-allowed;
         background: lighten( $light-green, 35%);
+    }
+
+    @media ( min-width: $desktop-breakpoint ) {
+        width: 45rem;
     }
 }
 
@@ -47,12 +51,14 @@
 
 .textarea {
     @extend .text-input;
-    height: 15rem;
-}
+    height: 20rem;
 
-.textarea--desktop {
-    @media ( min-width: $desktop-breakpoint ) {
+
+    &.textarea--lg {
         width: 100%;
-        height: 35rem;
+
+        @media ( min-width: $desktop-breakpoint ) {
+            height: 35rem;
+        }
     }
 }
