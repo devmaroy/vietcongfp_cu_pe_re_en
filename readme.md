@@ -11,11 +11,11 @@ For any questions feel free to contact me at me@mwardew.com
 
 <br />
 
-### Demo:  https://vietcong-fp.mwardew.com/
+### Demo:  https://vietcong-fp.mwardew.dev/
 
 <br />
 
-### Demo account: https://vietcong-fp.mwardew.com/login
+### Demo account: https://vietcong-fp.mwardew.dev/login
 email: josh@test.com
 password: 123456
 
