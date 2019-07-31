@@ -2,7 +2,7 @@
   "name": "vietcong-fan-page",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Mark Wardew",
+  "author": "Marek Matejovic",
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack",
