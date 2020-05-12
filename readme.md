@@ -9,7 +9,7 @@ Personal project based on React, Flexbox layout, HTML5 and modern CSS3 principes
 
 You can modify and use this project or certain components if you wish.
 
-For any questions feel free to contact me at marek@matejovic.cz
+For any questions feel free to contact me at hello@devmaroy.com
 
 <br />
 
@@ -18,7 +18,7 @@ For any questions feel free to contact me at marek@matejovic.cz
 1.  **Clone from Github.**
 
     ```
-    git clone git@github.com:mmatejovic/vietcong-fan-page.git
+    git clone git@github.com:devmaroy/vietcong-fan-page.git
     ```
 
   <br />
@@ -62,10 +62,10 @@ A quick look at the top-level files and directories you'll see in my Gatsby proj
 
 <br />
 
-## 🔗 Live Example - [https://vietcong-fp.netlify.com/](https://vietcong-fp.netlify.com/)
+## 🔗 Live Example - [https://vietcong-fp-mmproj.netlify.com/](https://vietcong-fp-mmproj.netlify.com/)
 <br />
 
-### Demo account: https://vietcong-fp.netlify.com/login
+### Demo account: https://vietcong-fp-mmproj.netlify.com/login
 email: josh@test.com
 password: 123456
 <br />
