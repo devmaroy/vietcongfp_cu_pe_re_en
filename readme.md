@@ -51,16 +51,21 @@ Use these commands to install the dependencies and start the server.
 A quick look at the top-level files and directories you'll see in my project.
 
     .
-    ├── css
+    ├── public
     ├── server
     ├── src
     ├── .babelrc
     ├── .gitignore
-    ├── package-lock.json
     ├── package.json
+    ├── package-lock.json
     ├── screenshot.png
+    ├── screenshot2.png
+    ├── screenshot3.png
+    ├── webpack.config.js
+    ├── postcss.config.js
+    ├── jest.config.js
     ├── yarn.lock
-    └── README.md
+    └── readme.md
 
 <br>
 
@@ -74,13 +79,21 @@ A quick look at the top-level files and directories you'll see in my project.
   
 5.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-6.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of npm dependencies that were installed for project. **(You won’t change this file directly).**
+6.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for project.
 
-7.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for project.
+7.  **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of npm dependencies that were installed for project. **(You won’t change this file directly).**
 
-8.  **`screenshot.png`**: Screenshot of the final website.
+8.  **`screenshot-3.png`**: Screenshots of the final website.
+  
+9.  **`webpack.config.js`**: Configuration file for webpack
 
-9.  **`readme.md`**: A text file containing useful reference information about project.
+10. **`postcss.config.js`**: Configuration file for PostCSS
+
+11.  **`jest.config.js`**: Configuration file for Jest testing
+
+12. **`yarn.lock`**: There is an identifier for every dependency and sub dependency that is used for a project.
+
+13. **`readme.md`**: A text file containing useful reference information about project.
 
 
 <br>
@@ -90,7 +103,7 @@ A quick look at the top-level files and directories you'll see in my project.
 <br>
 
 ###  Live example: 
-[vietcong-fp-mmproj.netlify.com](https://vietcong-fp-mmproj.netlify.com)
+**[vietcong-fp-mmproj.netlify.app](https://vietcong-fp-mmproj.netlify.app)**
 
 <br>
 
