@@ -1,4 +1,4 @@
-<img src="src/images/logo/logo.png" width="100">
+<img src="public/images/logo/logo.png" width="100">
 
 # **Vietcong Fan Page**
 
