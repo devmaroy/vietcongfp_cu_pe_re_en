@@ -2,7 +2,7 @@
 
 # **Vietcong Fan Page**
 
-This project is based on **React**, **Flexbox** layout, **HTML5** and modern **CSS3** principles. You can modify and use this project or certain components if you wish
+This project is based on **React**, **Flexbox** layout, **HTML5** and modern **CSS3** principles. You can modify and use this project or certain components if you wish.
 
 <br>
 
