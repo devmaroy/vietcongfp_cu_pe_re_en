@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="footer">
                 <p>Copyright &copy; { new Date().getFullYear() }</p>
                 <p>All rights reserved.</p>
-                <p>Made with <i className="heart-symbol"></i> by <a href="https://mwardew.com/">MWardew</a></p> 
+                <p>Made with <i className="heart-symbol"></i> by <a href="https://marekmatejovic.com/">devmaroy</a></p> 
                 { iconsCopyright }
             </div>
         </div>
