@@ -32,7 +32,7 @@ Use these commands to install the dependencies and start the server.
    $ cd my-folder
    ```
 
-4. Create .env.development file and fill it with the info from Firebase realtime database - create project
+4. Create .env.development(use .env.example) file and fill it with the info from Firebase realtime database - create project
 
    ```
    https://console.firebase.google.com
