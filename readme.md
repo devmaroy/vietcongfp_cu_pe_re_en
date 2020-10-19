@@ -23,7 +23,7 @@ Use these commands to install the dependencies and start the server.
 1. **Clone from Github**
 
    ```
-   $ git clone git@github.com:devmaroy/vietcongfp_cu_pe_re_en.git
+   $ git clone git@github.com:devmaroy/vietcongfp_cu_pe_re_fidb_en.git
    ```
 
 2. **Install dependencies**
@@ -119,4 +119,4 @@ A quick look at the top-level files and directories you'll see in my project.
 
 Created by **[@devmaroy](https://twitter.com/devmaroy)** feel free to contact me
 
-e-mail: **[hello@devmaroy.com](mailto:hello@devmaroy.com?subject=[GitHub]%20vietcongfp_cu_pe_re_en)**
+e-mail: **[hello@devmaroy.com](mailto:hello@devmaroy.com?subject=[GitHub]%20vietcongfp_cu_pe_re_fidb_en)**
