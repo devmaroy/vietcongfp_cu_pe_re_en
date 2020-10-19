@@ -65,6 +65,8 @@ A quick look at the top-level files and directories you'll see in my project.
     ├── server
     ├── src
     ├── .babelrc
+    ├── .env.example
+    ├── .node_version
     ├── .gitignore
     ├── package.json
     ├── package-lock.json
@@ -86,6 +88,10 @@ A quick look at the top-level files and directories you'll see in my project.
 3.  **`/src`**: This directory contains all the necessary files such as React components and styles.
 
 4.  **`.babelrc`**: Configuration file for babel.
+
+5.  **`.env.example`**: Example configuration file for .env.
+
+5.  **`.node_version`**: Best recommended node version for this project.
 
 5.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
